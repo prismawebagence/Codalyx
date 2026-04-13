@@ -1,13 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, type Variants } from "framer-motion";
 import { Calendar } from "lucide-react";
 import BookingCTA from "@/components/shared/BookingCTA";
 
 const titleWords = ["Votre", "site", "web,", "votre", "meilleur", "commercial"];
 
-const wordVariants = {
+const wordVariants: Variants = {
   hidden: { opacity: 0, y: 20, filter: "blur(8px)" },
   visible: (i: number) => ({
     opacity: 1,
@@ -22,7 +22,7 @@ const wordVariants = {
   }),
 };
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
     opacity: 1,
@@ -36,7 +36,7 @@ const fadeUp = {
   }),
 };
 
-const scaleIn = {
+const scaleIn: Variants = {
   hidden: { opacity: 0, scale: 0.92 },
   visible: {
     opacity: 1,

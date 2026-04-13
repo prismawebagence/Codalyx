@@ -141,7 +141,7 @@ export default function ContactForm() {
 
         <div className="space-y-2">
           <Label htmlFor="projectType">Type de projet *</Label>
-          <Select onValueChange={(v) => setValue("projectType", v)}>
+          <Select onValueChange={(v: string | null) => { if (v) setValue("projectType", v); }}>
             <SelectTrigger className={errors.projectType ? "border-red-400" : ""}>
               <SelectValue placeholder="Choisir une formule" />
             </SelectTrigger>

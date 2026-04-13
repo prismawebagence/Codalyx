@@ -60,7 +60,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <SectionTitle tag="FAQ" title={"Vos questions, nos r\u00e9ponses"} />
 
-        <Accordion type="single" collapsible className="mt-12">
+        <Accordion className="mt-12">
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`item-${i}`}>
               <AccordionTrigger className="text-left font-medium text-[#0A0A0A] hover:text-[#FF6B2C]">

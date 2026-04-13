@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { MapPin, Users, Clock } from "lucide-react";
 
 const signals = [
@@ -9,7 +9,7 @@ const signals = [
   { icon: Clock, label: "R\u00e9ponse sous 24h" },
 ];
 
-const slideIn = {
+const slideIn: Variants = {
   hidden: { opacity: 0, x: -40 },
   visible: (i: number) => ({
     opacity: 1,

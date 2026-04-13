@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, type Variants } from "framer-motion";
 import { MessageSquare, Palette, Code2, Rocket } from "lucide-react";
 import SectionTitle from "@/components/shared/SectionTitle";
 
@@ -36,7 +36,7 @@ const steps = [
   },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: {
     transition: {
@@ -46,7 +46,7 @@ const containerVariants = {
   },
 };
 
-const stepVariants = {
+const stepVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
