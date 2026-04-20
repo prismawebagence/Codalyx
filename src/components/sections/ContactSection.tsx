@@ -9,19 +9,19 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Adresse",
-    value: "15 Place Kléber, 67000 Strasbourg",
+    value: "3 Rue Relinde, 67200 Strasbourg",
   },
   {
     icon: Phone,
     label: "Téléphone",
-    value: "03 88 00 00 00",
-    href: "tel:+33388000000",
+    value: "07 71 65 75 28",
+    href: "tel:+33771657528",
   },
   {
     icon: Mail,
     label: "E-mail",
-    value: "contact@webcraft-studio.fr",
-    href: "mailto:contact@webcraft-studio.fr",
+    value: "contact@codalyx.fr",
+    href: "mailto:contact@codalyx.fr",
   },
   {
     icon: Clock,
@@ -114,23 +114,6 @@ export default function ContactSection() {
                 );
               })}
             </div>
-
-            {/* Google Maps */}
-            <motion.div
-              className="mt-6 aspect-video overflow-hidden rounded-2xl border border-[#E4E4E7]"
-              variants={itemVariants}
-            >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2639.5!2d7.7456!3d48.5834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDM1JzAwLjQiTiA3wrA0NCc0NC4yIkU!5e0!3m2!1sfr!2sfr!4v1"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="WebCraft Studio — 15 Place Kléber, Strasbourg"
-              />
-            </motion.div>
           </motion.div>
         </div>
       </div>

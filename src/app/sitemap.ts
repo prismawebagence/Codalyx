@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://webcraft-studio.fr";
+  const baseUrl = "https://codalyx.fr";
   const now = new Date();
 
   return [

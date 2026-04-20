@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" role="img" aria-label="Codalyx">
+  <title>Codalyx</title>
+  <!-- Mark -->
+  <g>
+    <rect x="2" y="8" width="40" height="40" rx="10" fill="#1A1A1A"/>
+    <!-- Stylized C formed by two chevrons -->
+    <path d="M28 20 L18 28 L28 36" fill="none" stroke="#FF6B2C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="32.5" cy="28" r="2.2" fill="#FF6B2C"/>
+  </g>
+  <!-- Wordmark -->
+  <g font-family="'Inter','Segoe UI',system-ui,sans-serif" fill="#0A0A0A">
+    <text x="52" y="37" font-size="24" font-weight="700" letter-spacing="-0.5">Coda<tspan fill="#FF6B2C">l</tspan>yx</text>
+  </g>
+</svg>

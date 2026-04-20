@@ -30,15 +30,15 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {/* Col 1 — Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2">
-              <div className="flex size-7 items-center justify-center rounded-md bg-white/10">
-                <div className="size-3 rounded-sm bg-[#FF6B2C]" />
+            <Link href="/" className="inline-flex items-center gap-2" aria-label="Codalyx — Accueil">
+              <div className="flex size-8 items-center justify-center rounded-lg bg-white/10">
+                <svg viewBox="0 0 48 48" className="size-5" aria-hidden="true">
+                  <path d="M30 16 L18 24 L30 32" fill="none" stroke="#FF6B2C" strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="35" cy="24" r="2.6" fill="#FF6B2C"/>
+                </svg>
               </div>
-              <span className="font-heading text-xl tracking-tight text-white">
-                Web<span className="font-semibold">Craft</span>
-                <span className="ml-1 font-light text-white/60">
-                  Studio
-                </span>
+              <span className="font-heading text-xl font-bold tracking-tight text-white">
+                Coda<span className="text-[#FF6B2C]">l</span>yx
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
@@ -46,9 +46,9 @@ export function Footer() {
               internet performants et sur-mesure pour les entreprises en Alsace.
             </p>
             <address className="mt-4 text-sm not-italic leading-relaxed text-white/50">
-              15 Place Kléber
+              3 Rue Relinde
               <br />
-              67000 Strasbourg
+              67200 Strasbourg
             </address>
           </div>
 
@@ -112,7 +112,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-2 border-t border-white/10 py-6 text-xs text-white/50 sm:flex-row">
-          <p>&copy; 2025 WebCraft Studio. Tous droits réservés.</p>
+          <p>&copy; 2026 Codalyx. Tous droits réservés.</p>
           <p>Fait avec soin à Strasbourg</p>
         </div>
       </div>

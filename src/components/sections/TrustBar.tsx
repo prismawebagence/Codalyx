@@ -1,11 +1,11 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { MapPin, Users, Clock } from "lucide-react";
+import { MapPin, Sparkles, Clock } from "lucide-react";
 
 const signals = [
   { icon: MapPin, label: "Bas\u00e9 \u00e0 Strasbourg" },
-  { icon: Users, label: "+50 clients accompagn\u00e9s" },
+  { icon: Sparkles, label: "Nouvelle agence alsacienne" },
   { icon: Clock, label: "R\u00e9ponse sous 24h" },
 ];
 

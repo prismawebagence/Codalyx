@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://webcraft-studio.fr/sitemap.xml",
+    sitemap: "https://codalyx.fr/sitemap.xml",
   };
 }

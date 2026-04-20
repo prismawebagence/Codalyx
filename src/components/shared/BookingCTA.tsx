@@ -1,7 +1,6 @@
 "use client";
 
 import { type ReactNode } from "react";
-import { Calendar } from "lucide-react";
 import {
   Dialog,
   DialogTrigger,
@@ -17,6 +16,16 @@ interface BookingCTAProps {
   className?: string;
   variant?: "default" | "outline";
 }
+
+// Calendly configuration — colors match the Codalyx brand palette.
+const CALENDLY_URL = "https://calendly.com/sank4bob/30min";
+const CALENDLY_PARAMS = new URLSearchParams({
+  hide_gdpr_banner: "1",
+  primary_color: "FF6B2C",
+  text_color: "0A0A0A",
+  background_color: "ffffff",
+}).toString();
+const CALENDLY_EMBED_URL = `${CALENDLY_URL}?embed_domain=codalyx.fr&embed_type=Inline&${CALENDLY_PARAMS}`;
 
 export default function BookingCTA({
   children,
@@ -37,8 +46,8 @@ export default function BookingCTA({
       >
         {children}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-lg">
-        <DialogHeader>
+      <DialogContent className="max-h-[92vh] w-[95vw] overflow-hidden p-0 sm:max-w-3xl">
+        <DialogHeader className="px-6 pt-6">
           <DialogTitle className="font-heading text-2xl">
             R&eacute;servez votre appel d&eacute;couverte
           </DialogTitle>
@@ -47,21 +56,13 @@ export default function BookingCTA({
             engagement.
           </DialogDescription>
         </DialogHeader>
-        <div className="mt-6 flex flex-col items-center gap-4 rounded-xl border border-[#E4E4E7] bg-[#FAFAFA] p-8 text-center">
-          <div className="flex size-12 items-center justify-center rounded-full bg-[#FF6B2C]">
-            <Calendar className="size-5 text-white" />
-          </div>
-          <p className="text-sm text-[#71717A]">
-            Choisissez un cr&eacute;neau qui vous convient
-          </p>
-          <a
-            href="https://calendly.com/votre-lien"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex h-10 items-center justify-center rounded-lg bg-[#FF6B2C] px-6 text-sm font-medium text-white transition-colors hover:bg-[#E55A1F]"
-          >
-            Ouvrir Calendly
-          </a>
+        <div className="h-[70vh] w-full">
+          <iframe
+            src={CALENDLY_EMBED_URL}
+            title="R&eacute;servation Calendly"
+            className="h-full w-full border-0"
+            loading="lazy"
+          />
         </div>
       </DialogContent>
     </Dialog>

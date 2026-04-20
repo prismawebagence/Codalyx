@@ -52,13 +52,15 @@ export function Header() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex size-7 items-center justify-center rounded-md bg-[#1A1A1A]">
-            <div className="size-3 rounded-sm bg-[#FF6B2C]" />
+        <Link href="/" className="flex items-center gap-2" aria-label="Codalyx — Accueil">
+          <div className="flex size-8 items-center justify-center rounded-lg bg-[#1A1A1A]">
+            <svg viewBox="0 0 48 48" className="size-5" aria-hidden="true">
+              <path d="M30 16 L18 24 L30 32" fill="none" stroke="#FF6B2C" strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round"/>
+              <circle cx="35" cy="24" r="2.6" fill="#FF6B2C"/>
+            </svg>
           </div>
-          <span className="font-heading text-xl tracking-tight text-[#0A0A0A]">
-            Web<span className="font-semibold">Craft</span>
-            <span className="ml-1 font-light text-[#71717A]">Studio</span>
+          <span className="font-heading text-xl font-bold tracking-tight text-[#0A0A0A]">
+            Coda<span className="text-[#FF6B2C]">l</span>yx
           </span>
         </Link>
 
