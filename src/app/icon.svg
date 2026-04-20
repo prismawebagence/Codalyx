@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Codalyx">
+  <title>Codalyx</title>
+  <rect x="2" y="2" width="44" height="44" rx="11" fill="#1A1A1A"/>
+  <path d="M30 16 L18 24 L30 32" fill="none" stroke="#FF6B2C" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="35" cy="24" r="2.6" fill="#FF6B2C"/>
+</svg>
