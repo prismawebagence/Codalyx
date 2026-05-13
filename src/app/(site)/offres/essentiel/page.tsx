@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Offre Essentiel — 690€ | Site vitrine Strasbourg | Codalyx",
   description:
     "Site vitrine professionnel 3 à 5 pages, responsive, hébergement inclus. Idéal pour artisans et petits commerces à Strasbourg. À partir de 690€.",
+  alternates: { canonical: "/offres/essentiel" },
 };
 
 const features = [
@@ -35,14 +36,17 @@ const jsonLd = {
 export default function EssentielPage() {
   return (
     <>
-      {/* JSON-LD handled via metadata */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       <section className="pt-32 pb-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <Link
             href="/offres"
-            className="inline-flex items-center gap-1.5 text-sm text-[#6B7280] hover:text-[#0A0A0A]"
+            className="inline-flex items-center gap-1.5 text-sm text-[#52525B] hover:text-[#0A0A0A]"
           >
-            <ArrowLeft className="size-4" />
+            <ArrowLeft className="size-4" aria-hidden="true" />
             Toutes les offres
           </Link>
 
@@ -53,7 +57,7 @@ export default function EssentielPage() {
             <h1 className="mt-4 font-heading text-3xl font-semibold text-[#0A0A0A] md:text-4xl">
               Le site qui vous rend visible
             </h1>
-            <p className="mt-3 text-lg text-[#6B7280]">
+            <p className="mt-3 text-lg text-[#52525B]">
               La solution idéale pour les artisans, petits commerces et professions libérales qui souhaitent être présents en ligne avec un site professionnel et efficace.
             </p>
 
@@ -61,9 +65,9 @@ export default function EssentielPage() {
               <span className="font-heading text-5xl font-bold text-[#0A0A0A]">
                 690&nbsp;&euro;
               </span>
-              <span className="text-[#6B7280]">création</span>
+              <span className="text-[#52525B]">création</span>
             </div>
-            <p className="mt-1 text-[#6B7280]">
+            <p className="mt-1 text-[#52525B]">
               + 39&nbsp;&euro;/mois (hébergement, domaine, maintenance)
             </p>
 
@@ -74,7 +78,7 @@ export default function EssentielPage() {
               <ul className="mt-6 space-y-4">
                 {features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <Check className="mt-0.5 size-5 shrink-0 text-[#FF6B2C]" />
+                    <Check className="mt-0.5 size-5 shrink-0 text-[#FF6B2C]" aria-hidden="true" />
                     <span className="text-[#0A0A0A]">{feature}</span>
                   </li>
                 ))}
@@ -84,7 +88,7 @@ export default function EssentielPage() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex h-12 items-center justify-center rounded-full bg-[#FF6B2C] px-8 text-sm font-semibold text-white transition-colors hover:bg-[#E55A1F]"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-[#FF6B2C] px-8 text-sm font-semibold text-[#0A0A0A] transition-colors hover:bg-[#E55A1F]"
               >
                 Demander un devis gratuit
               </Link>

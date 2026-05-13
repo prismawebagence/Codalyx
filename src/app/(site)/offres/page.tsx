@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Nos offres | Création de site internet | Codalyx",
   description:
     "Découvrez nos 3 formules de création de site internet à Strasbourg : Essentiel (690€), Pro (1 290€) et Premium (2 290€). Sites sur-mesure livrés clé en main.",
+  alternates: { canonical: "/offres" },
 };
 
 export default function OffresPage() {

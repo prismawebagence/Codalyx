@@ -49,19 +49,21 @@ export default function BookingCTA({
       <DialogContent className="max-h-[92vh] w-[95vw] overflow-hidden p-0 sm:max-w-3xl">
         <DialogHeader className="px-6 pt-6">
           <DialogTitle className="font-heading text-2xl">
-            R&eacute;servez votre appel d&eacute;couverte
+            Réservez votre appel découverte
           </DialogTitle>
           <DialogDescription className="text-base leading-relaxed">
-            20 minutes pour discuter de votre projet &mdash; gratuit et sans
+            20 minutes pour discuter de votre projet — gratuit et sans
             engagement.
           </DialogDescription>
         </DialogHeader>
         <div className="h-[70vh] w-full">
           <iframe
             src={CALENDLY_EMBED_URL}
-            title="R&eacute;servation Calendly"
+            title="Réservation Calendly"
             className="h-full w-full border-0"
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
           />
         </div>
       </DialogContent>

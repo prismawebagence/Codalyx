@@ -49,7 +49,7 @@ export default function RegionsClient({ cellarImage }: { cellarImage: PexelsPhot
             className="relative aspect-[4/5] overflow-hidden rounded-2xl"
           >
             {cellarImage?.src ? (
-              // eslint-disable-next-line @next/next/no-img-element
+               
               <img
                 src={cellarImage.src}
                 alt="Cave du Sommelier"

@@ -190,7 +190,7 @@ function ProductCard({
       {/* Image */}
       <div className="relative h-52 overflow-hidden">
         {image?.src ? (
-          // eslint-disable-next-line @next/next/no-img-element
+           
           <img
             src={image.src}
             alt={product.nom}
@@ -285,7 +285,7 @@ function ProductModal({
           {/* Image */}
           <div className="relative hidden min-h-[380px] lg:block">
             {image?.src ? (
-              // eslint-disable-next-line @next/next/no-img-element
+               
               <img src={image.src} alt={product.nom} className="h-full w-full object-cover" />
             ) : (
               <div className="h-full w-full bg-gradient-to-br from-[#1A0A0A] to-[#722F37]" />

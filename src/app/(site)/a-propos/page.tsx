@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "À propos | Codalyx — Agence Web Strasbourg",
   description:
     "Découvrez Codalyx, agence web basée à Strasbourg. Notre mission : rendre le web accessible aux artisans et PME d'Alsace avec des sites performants.",
+  alternates: { canonical: "/a-propos" },
 };
 
 const values = [

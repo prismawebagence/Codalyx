@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "Codalyx — Agence Web Strasbourg",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Agence Web Strasbourg | Codalyx",
     description:
       "Création de sites internet sur-mesure à Strasbourg. Développement web, SEO et stratégie digitale pour les entreprises en Alsace.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.svg"],
   },
   robots: {
     index: true,
@@ -67,7 +67,6 @@ export default function RootLayout({
       lang="fr"
       className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
     >
-      <head />
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

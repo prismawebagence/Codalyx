@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Conditions Générales de Vente | Codalyx",
   description: "Conditions générales de vente de Codalyx, agence web à Strasbourg.",
+  alternates: { canonical: "/cgv" },
+  robots: { index: false, follow: true },
 };
 
 export default function CGV() {
