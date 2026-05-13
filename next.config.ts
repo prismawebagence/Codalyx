@@ -16,13 +16,18 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://assets.calendly.com https://prod.spline.design https://unpkg.com",
+      // Spline + Calendly need 'unsafe-eval' (WASM) and 'unsafe-inline' (runtime).
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://assets.calendly.com https://*.spline.design https://unpkg.com",
       "style-src 'self' 'unsafe-inline' https://assets.calendly.com https://fonts.googleapis.com",
-      "img-src 'self' data: blob: https://images.pexels.com https://prod.spline.design https://*.calendly.com",
-      "font-src 'self' data: https://fonts.gstatic.com",
-      "connect-src 'self' https://prod.spline.design https://*.calendly.com",
+      "img-src 'self' data: blob: https://images.pexels.com https://*.spline.design https://*.calendly.com",
+      "font-src 'self' data: https://fonts.gstatic.com https://*.spline.design",
+      // Spline fetches scene + textures + assets from prod.spline.design and CDNs.
+      "connect-src 'self' https: wss: blob: data:",
+      // Spline embeds audio (howler) — needs media-src.
+      "media-src 'self' blob: data: https://*.spline.design",
       "frame-src https://calendly.com https://*.calendly.com",
       "worker-src 'self' blob:",
+      "child-src 'self' blob:",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",

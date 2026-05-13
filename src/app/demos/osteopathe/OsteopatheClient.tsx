@@ -544,7 +544,7 @@ export default function OsteopatheClient({
               <motion.div
                 initial={{ opacity: 0, scale: 0.96 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: "-30%" }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 className="relative mx-auto flex h-[460px] w-full max-w-[280px] items-center justify-center sm:h-[560px] sm:max-w-[340px] lg:h-[640px] lg:max-w-[360px]"
               >
@@ -888,8 +888,8 @@ function BodyMap({
     >
       <defs>
         <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#E7DDD1" />
-          <stop offset="100%" stopColor="#D9C6B4" />
+          <stop offset="0%" stopColor="#E0CFB8" />
+          <stop offset="100%" stopColor="#B89878" />
         </linearGradient>
       </defs>
 
@@ -897,7 +897,7 @@ function BodyMap({
       <g
         fill="url(#bodyGrad)"
         stroke="#2F4A34"
-        strokeWidth="0.6"
+        strokeWidth="1.1"
         strokeLinejoin="round"
         strokeLinecap="round"
       >
