@@ -388,7 +388,7 @@ export default function OsteopatheClient({
               style={{ backgroundColor: praticienImage.avgColor || "#1A1F1B" }}
             >
               {praticienImage.src && (
-                // eslint-disable-next-line @next/next/no-img-element
+                 
                 <img
                   src={praticienImage.src}
                   alt={praticienImage.alt || "Camille Verdier"}
@@ -594,7 +594,7 @@ export default function OsteopatheClient({
                 }}
               >
                 {praticienImage.src && (
-                  // eslint-disable-next-line @next/next/no-img-element
+                   
                   <img
                     src={praticienImage.src}
                     alt={praticienImage.alt || "Portrait de Camille Verdier"}
@@ -731,7 +731,7 @@ export default function OsteopatheClient({
                   style={{ backgroundColor: img.avgColor || "#2F4A34" }}
                 >
                   {img.src && (
-                    // eslint-disable-next-line @next/next/no-img-element
+                     
                     <img
                       src={img.src}
                       alt={img.alt || "Cabinet"}

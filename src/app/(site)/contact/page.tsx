@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Contact | Codalyx — Agence Web Strasbourg",
   description:
     "Contactez Codalyx pour votre projet de création de site internet à Strasbourg. Devis gratuit sous 24h. 3 Rue Relinde, 67200 Strasbourg.",
+  alternates: { canonical: "/contact" },
 };
 
 const contactInfo = [

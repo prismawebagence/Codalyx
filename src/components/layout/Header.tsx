@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetTrigger,
@@ -109,10 +108,12 @@ export function Header() {
               render={
                 <button
                   type="button"
-                  className="inline-flex size-9 items-center justify-center rounded-lg text-[#71717A] hover:bg-[#FAFAFA] hover:text-[#0A0A0A]"
+                  className="inline-flex size-11 items-center justify-center rounded-lg text-[#52525B] hover:bg-[#FAFAFA] hover:text-[#0A0A0A]"
                   aria-label="Ouvrir le menu"
+                  aria-haspopup="dialog"
+                  aria-expanded={mobileOpen}
                 >
-                  <Menu className="size-5" />
+                  <Menu className="size-5" aria-hidden="true" />
                 </button>
               }
             />

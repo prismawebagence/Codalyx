@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Mentions légales | Codalyx",
   description: "Mentions légales du site Codalyx, agence web à Strasbourg.",
+  alternates: { canonical: "/mentions-legales" },
 };
 
 export default function MentionsLegales() {

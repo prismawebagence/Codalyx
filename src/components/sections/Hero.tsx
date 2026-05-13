@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useScroll, useTransform, type Variants } from "framer-motion";
+import { motion, useScroll, useTransform, useReducedMotion, type Variants } from "framer-motion";
 import { Calendar } from "lucide-react";
 import BookingCTA from "@/components/shared/BookingCTA";
 
@@ -51,13 +51,15 @@ const scaleIn: Variants = {
 };
 
 export default function Hero() {
+  const prefersReduced = useReducedMotion();
   const { scrollY } = useScroll();
 
-  const floatY1 = useTransform(scrollY, [0, 500], [0, -60]);
-  const floatY2 = useTransform(scrollY, [0, 500], [0, 40]);
-  const floatY3 = useTransform(scrollY, [0, 500], [0, -30]);
-  const floatRotate1 = useTransform(scrollY, [0, 500], [0, 45]);
-  const floatRotate2 = useTransform(scrollY, [0, 500], [0, -30]);
+  const range = prefersReduced ? [0, 0] : [0, 500];
+  const floatY1 = useTransform(scrollY, range, prefersReduced ? [0, 0] : [0, -60]);
+  const floatY2 = useTransform(scrollY, range, prefersReduced ? [0, 0] : [0, 40]);
+  const floatY3 = useTransform(scrollY, range, prefersReduced ? [0, 0] : [0, -30]);
+  const floatRotate1 = useTransform(scrollY, range, prefersReduced ? [0, 0] : [0, 45]);
+  const floatRotate2 = useTransform(scrollY, range, prefersReduced ? [0, 0] : [0, -30]);
 
   return (
     <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pb-28">
@@ -104,14 +106,14 @@ export default function Hero() {
             </h1>
 
             <motion.p
-              className="mt-6 max-w-lg text-lg leading-relaxed text-[#71717A]"
+              className="mt-6 max-w-lg text-lg leading-relaxed text-[#52525B]"
               variants={fadeUp}
               initial="hidden"
               animate="visible"
               custom={0}
             >
-              Nous cr&eacute;ons des sites internet performants pour les artisans,
-              commer&ccedil;ants et professions lib&eacute;rales de Strasbourg et d&apos;Alsace.
+              Nous créons des sites internet performants pour les artisans,
+              commerçants et professions libérales de Strasbourg et d&apos;Alsace.
             </motion.p>
 
             <motion.div
@@ -123,14 +125,14 @@ export default function Hero() {
             >
               <Link
                 href="/offres"
-                className="inline-flex h-12 items-center justify-center rounded-full bg-[#FF6B2C] px-8 text-sm font-semibold text-white transition-colors hover:bg-[#E55A1F]"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-[#FF6B2C] px-8 text-sm font-semibold text-[#0A0A0A] transition-colors hover:bg-[#E55A1F]"
               >
                 Voir les offres
               </Link>
 
               <BookingCTA className="h-12 rounded-full border border-[#0A0A0A] bg-transparent px-8 text-sm font-semibold text-[#0A0A0A] hover:bg-[#0A0A0A] hover:text-white transition-colors">
-                <Calendar className="size-4" />
-                R&eacute;server un appel
+                <Calendar className="size-4" aria-hidden="true" />
+                Réserver un appel
               </BookingCTA>
             </motion.div>
           </div>
@@ -141,6 +143,8 @@ export default function Hero() {
             variants={scaleIn}
             initial="hidden"
             animate="visible"
+            role="img"
+            aria-label="Aperçu illustratif d'un site web créé par Codalyx"
           >
             <div className="overflow-hidden rounded-xl border border-[#E4E4E7] bg-white shadow-2xl shadow-black/5">
               {/* Browser toolbar */}

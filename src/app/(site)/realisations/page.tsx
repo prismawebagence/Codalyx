@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Réalisations & démos | Codalyx — Agence Web Strasbourg",
   description:
     "Découvrez nos projets de démonstration : sites vitrines, sites avec réservation en ligne et e-commerce pensés pour les entreprises alsaciennes.",
+  alternates: { canonical: "/realisations" },
 };
 
 export default function RealisationsPage() {
