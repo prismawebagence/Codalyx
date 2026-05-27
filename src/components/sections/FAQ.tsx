@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "Combien de temps faut-il pour cr\u00e9er mon site ?",
     answer:
-      "Le d\u00e9lai d\u00e9pend de la formule choisie : environ 2 semaines pour l\u2019Essentiel, 3 semaines pour le Pro et 4 \u00e0 5 semaines pour le Premium. Ces d\u00e9lais incluent les phases de maquette, validation et d\u00e9veloppement.",
+      "Le d\u00e9lai d\u00e9pend de la formule : 5 \u00e0 7 jours ouvr\u00e9s pour le Pack Vitrine, 10 \u00e0 14 jours pour le Pack Business, 21 \u00e0 30 jours pour le Pack Pro. Ces d\u00e9lais incluent les phases de maquette, validation et d\u00e9veloppement.",
   },
   {
     question: "Est-ce que je suis propri\u00e9taire de mon site ?",
@@ -20,24 +20,24 @@ const faqs = [
       "Oui, \u00e0 100\u00a0%. Le code source, le contenu et le nom de domaine vous appartiennent. Si vous d\u00e9cidez de partir, nous vous transf\u00e9rons l\u2019int\u00e9gralit\u00e9 de vos fichiers.",
   },
   {
-    question: "Puis-je r\u00e9silier l\u2019abonnement mensuel ?",
+    question: "La maintenance est-elle obligatoire ?",
     answer:
-      "Oui, l\u2019abonnement est sans engagement. Vous pouvez r\u00e9silier \u00e0 tout moment avec un pr\u00e9avis de 30 jours. Votre site reste le v\u00f4tre, seuls l\u2019h\u00e9bergement et la maintenance s\u2019arr\u00eatent.",
+      "Non. La Maintenance Contenu (99 \u20ac/mois, pour le Pack Vitrine) et la Maintenance Technique (69 \u20ac/mois, pour les Packs Business et Pro) sont optionnelles, sans engagement, r\u00e9siliables avec un pr\u00e9avis de 30 jours par email.",
   },
   {
-    question: "Combien de modifications puis-je demander ?",
+    question: "Combien co\u00fbte une modification apr\u00e8s livraison ?",
     answer:
-      "L\u2019offre Premium inclut 2 modifications par mois. Pour les offres Essentiel et Pro, les modifications sont factur\u00e9es \u00e0 l\u2019heure (60\u00a0\u20ac/h). Les corrections de bugs sont toujours gratuites.",
+      "Avec un Pack Business ou Pro, vous modifiez vous-m\u00eame textes et images via le CMS Sanity. Pour les modifications de code (nouvelle section, design) ou pour les clients Vitrine, comptez 65 \u20ac/h hors forfait, ou utilisez la maintenance qui inclut un quota mensuel.",
   },
   {
     question: "L\u2019h\u00e9bergement est-il inclus ?",
     answer:
-      "Oui, l\u2019h\u00e9bergement haute performance, le nom de domaine, le certificat SSL et les sauvegardes automatiques sont inclus dans l\u2019abonnement mensuel de chaque formule.",
+      "Oui, l\u2019h\u00e9bergement Vercel est inclus \u00e0 vie dans le prix de cr\u00e9ation. Le nom de domaine (~10\u201315 \u20ac/an) reste \u00e0 la charge du client.",
   },
   {
     question: "Le site sera-t-il bien r\u00e9f\u00e9renc\u00e9 sur Google ?",
     answer:
-      "Chaque site est construit avec les bonnes pratiques SEO : structure technique optimis\u00e9e, vitesse de chargement, balises m\u00e9ta, et donn\u00e9es structur\u00e9es. Les offres Pro et Premium incluent un travail de r\u00e9f\u00e9rencement local approfondi.",
+      "Chaque site applique les bonnes pratiques SEO : structure technique optimis\u00e9e, vitesse, balises m\u00e9ta, donn\u00e9es structur\u00e9es. Le Pack Business inclut un SEO avanc\u00e9, et le Pack Pro un rapport SEO initial avec recommandations de mots-cl\u00e9s.",
   },
 ];
 

@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { motion, useMotionValue, useTransform, type Variants } from "framer-motion";
+import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform, type Variants } from "framer-motion";
 import { Globe, AlertTriangle, SearchX } from "lucide-react";
 import SectionTitle from "@/components/shared/SectionTitle";
 
@@ -10,7 +9,7 @@ const problems = [
     icon: Globe,
     title: "Pas de site web",
     description:
-      "Vos clients potentiels cherchent sur Google\u2026 et trouvent vos concurrents. 70\u00a0% des consommateurs recherchent un commerce local en ligne avant de s\u2019y rendre.",
+      "Vos clients potentiels cherchent sur Google\u2026 et trouvent vos concurrents. 76\u00a0% des consommateurs recherchent un commerce local en ligne avant de s\u2019y rendre (\u00e9tude BrightLocal 2024).",
   },
   {
     icon: AlertTriangle,
@@ -56,11 +55,14 @@ function TiltCard({
   children: React.ReactNode;
   className?: string;
 }) {
+  // Tout reste en motion values — aucun re-render React déclenché par le mousemove.
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  const rotateX = useTransform(y, [-100, 100], [8, -8]);
-  const rotateY = useTransform(x, [-100, 100], [-8, 8]);
-  const [isHovered, setIsHovered] = useState(false);
+  const springX = useSpring(x, { stiffness: 200, damping: 25, mass: 0.5 });
+  const springY = useSpring(y, { stiffness: 200, damping: 25, mass: 0.5 });
+  const rotateX = useTransform(springY, [-100, 100], [8, -8]);
+  const rotateY = useTransform(springX, [-100, 100], [-8, 8]);
+  const transform = useMotionTemplate`perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 
   function handleMouse(e: React.MouseEvent<HTMLDivElement>) {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -73,23 +75,14 @@ function TiltCard({
   function handleLeave() {
     x.set(0);
     y.set(0);
-    setIsHovered(false);
   }
 
   return (
     <motion.div
       className={className}
-      style={{
-        rotateX: isHovered ? rotateX : 0,
-        rotateY: isHovered ? rotateY : 0,
-        transformPerspective: 800,
-      }}
-      onMouseMove={(e) => {
-        handleMouse(e);
-        setIsHovered(true);
-      }}
+      style={{ transform }}
+      onMouseMove={handleMouse}
       onMouseLeave={handleLeave}
-      transition={{ type: "spring", stiffness: 200, damping: 20 }}
     >
       {children}
     </motion.div>

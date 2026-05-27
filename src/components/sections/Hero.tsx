@@ -63,24 +63,29 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-white pt-32 pb-20 lg:pb-28">
-      {/* Floating geometric shapes */}
+      {/* Floating geometric shapes — purement décoratifs */}
       <motion.div
+        aria-hidden="true"
         className="pointer-events-none absolute top-40 left-[10%] size-4 rounded-sm bg-[#FF6B2C]/20"
         style={{ y: floatY1, rotate: floatRotate1 }}
       />
       <motion.div
+        aria-hidden="true"
         className="pointer-events-none absolute top-60 right-[15%] size-6 rounded-full border-2 border-[#0A0A0A]/15"
         style={{ y: floatY2, rotate: floatRotate2 }}
       />
       <motion.div
+        aria-hidden="true"
         className="pointer-events-none absolute bottom-32 left-[20%] size-3 rounded-sm bg-[#FF6B2C]/15"
         style={{ y: floatY3, rotate: floatRotate1 }}
       />
       <motion.div
+        aria-hidden="true"
         className="pointer-events-none absolute top-32 right-[30%] size-5 rounded-full bg-[#0A0A0A]/10"
         style={{ y: floatY2 }}
       />
       <motion.div
+        aria-hidden="true"
         className="pointer-events-none absolute bottom-48 right-[10%] size-4 rotate-45 bg-[#FF6B2C]/10"
         style={{ y: floatY1, rotate: floatRotate2 }}
       />
@@ -148,7 +153,7 @@ export default function Hero() {
           >
             <div className="overflow-hidden rounded-xl border border-[#E4E4E7] bg-white shadow-2xl shadow-black/5">
               {/* Browser toolbar */}
-              <div className="flex items-center gap-2 border-b border-[#E4E4E7] bg-[#FAFAFA] px-4 py-3">
+              <div aria-hidden="true" className="flex items-center gap-2 border-b border-[#E4E4E7] bg-[#FAFAFA] px-4 py-3">
                 <span className="size-3 rounded-full bg-[#EF4444]" />
                 <span className="size-3 rounded-full bg-[#F59E0B]" />
                 <span className="size-3 rounded-full bg-[#22C55E]" />

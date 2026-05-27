@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { Menu } from "lucide-react";
 import {
   Sheet,
@@ -27,15 +27,12 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+  const { scrollY } = useScroll();
 
-  useEffect(() => {
-    function handleScroll() {
-      setScrolled(window.scrollY > 10);
-    }
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const next = latest > 10;
+    setScrolled((prev) => (prev === next ? prev : next));
+  });
 
   return (
     <motion.header
@@ -95,7 +92,7 @@ export function Header() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="inline-flex h-9 items-center justify-center rounded-lg bg-[#FF6B2C] px-4 text-sm font-medium text-[#0A0A0A] transition-colors hover:bg-[#E55A1F]"
+            className="inline-flex h-10 items-center justify-center rounded-lg bg-[#FF6B2C] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#E55A1F]"
           >
             Devis gratuit
           </Link>
@@ -150,7 +147,7 @@ export function Header() {
                     render={
                       <Link
                         href="/contact"
-                        className="flex h-10 w-full items-center justify-center rounded-lg bg-[#FF6B2C] text-sm font-medium text-[#0A0A0A] transition-colors hover:bg-[#E55A1F]"
+                        className="flex h-11 w-full items-center justify-center rounded-lg bg-[#FF6B2C] text-sm font-semibold text-white transition-colors hover:bg-[#E55A1F]"
                       />
                     }
                   >

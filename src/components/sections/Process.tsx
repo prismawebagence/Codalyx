@@ -11,28 +11,28 @@ const steps = [
     title: "Brief & \u00e9change",
     description:
       "Un appel de 20 minutes pour comprendre votre activit\u00e9, vos objectifs et vos clients. On parle humain, pas jargon.",
-    timeline: "Jour 1",
+    timeline: "\u00c9tape 1",
   },
   {
     icon: Palette,
     title: "Maquette & validation",
     description:
       "Nous concevons une maquette fid\u00e8le \u00e0 votre image. Vous validez avant qu\u2019une seule ligne de code ne soit \u00e9crite.",
-    timeline: "Jour 3-5",
+    timeline: "\u00c9tape 2",
   },
   {
     icon: Code2,
     title: "D\u00e9veloppement",
     description:
       "Votre site prend vie : responsive, rapide, optimis\u00e9 SEO. On vous tient inform\u00e9 \u00e0 chaque \u00e9tape.",
-    timeline: "Jour 5-12",
+    timeline: "\u00c9tape 3",
   },
   {
     icon: Rocket,
     title: "Mise en ligne",
     description:
       "H\u00e9bergement, domaine, SSL : on s\u2019occupe de tout. Votre site est en ligne et vous \u00eates form\u00e9 pour l\u2019utiliser.",
-    timeline: "Jour 14",
+    timeline: "\u00c9tape 4",
   },
 ];
 
@@ -125,8 +125,7 @@ export default function Process() {
 
         {/* Bottom note */}
         <p className="mt-16 text-center text-sm text-[#71717A]">
-          D&eacute;lai moyen : 2 semaines pour l&apos;Essentiel, 3 pour le Pro, 4-5 pour
-          le Premium
+          D&eacute;lai : 5-7 jours pour le Pack Vitrine, 10-14 jours pour le Business, 21-30 jours pour le Pro
         </p>
       </div>
     </section>

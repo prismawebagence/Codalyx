@@ -98,21 +98,19 @@ export default function Portfolio() {
                   {project.href ? "Démo en ligne" : "Bientôt"}
                 </span>
 
-                {/* Default overlay */}
-                <div className="absolute inset-0 flex flex-col justify-end bg-black/30 p-4 transition-all duration-500 ease-out group-hover:bg-black/60 sm:p-6">
-                  <div className="translate-y-2 transition-transform duration-500 ease-out group-hover:translate-y-0">
-                    <span className="mb-1 inline-block text-xs font-medium tracking-wider text-[#FF6B2C] uppercase">
-                      {project.type}
-                    </span>
-                    <h3 className="font-heading text-lg font-semibold text-white sm:text-xl">
-                      {project.name}
-                    </h3>
-                    <p className="mt-2 max-h-0 overflow-hidden text-sm leading-relaxed text-white/80 opacity-0 transition-all duration-500 ease-out group-hover:max-h-32 group-hover:opacity-100">
-                      {project.description}
-                    </p>
-                  </div>
+                {/* Overlay — description toujours visible (mobile/clavier), s'éclaircit au hover */}
+                <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 transition-all duration-500 ease-out group-hover:from-black/90 group-focus-within:from-black/90 sm:p-6">
+                  <span className="mb-1 inline-block text-xs font-medium tracking-wider text-[#FF6B2C] uppercase">
+                    {project.type}
+                  </span>
+                  <h3 className="font-heading text-lg font-semibold text-white sm:text-xl">
+                    {project.name}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-white/85">
+                    {project.description}
+                  </p>
                   {project.href && (
-                    <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-[#FF6B2C] opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100">
+                    <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-[#FF6B2C]">
                       Voir la démo
                       <ArrowUpRight className="size-3.5" />
                     </span>

@@ -117,7 +117,7 @@ export default function NewsletterPopup() {
                           type="submit"
                           className="flex items-center gap-2 rounded-xl bg-[#C9A84C] px-5 py-3 text-sm font-bold uppercase tracking-wide text-[#0D0D0D] transition-all hover:bg-[#d4b55c] active:scale-[0.98] active:-translate-y-[1px]"
                         >
-                          <span className="hidden sm:inline">S'inscrire</span>
+                          <span className="hidden sm:inline">S&apos;inscrire</span>
                           <ArrowRight className="size-4" />
                         </button>
                       </div>

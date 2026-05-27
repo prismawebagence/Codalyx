@@ -33,7 +33,7 @@ export default function EvenementsClient() {
             className="max-w-xs text-sm leading-relaxed text-[#F5F0E8]/50 lg:text-right"
             style={{ fontFamily: "var(--font-caviste-body)" }}
           >
-            Chaque mois, nous réunissons amateurs éclairés et vignerons passionnés autour d'une thématique.
+            Chaque mois, nous réunissons amateurs éclairés et vignerons passionnés autour d&apos;une thématique.
             Places limitées, réservation indispensable.
           </motion.p>
         </div>
@@ -147,7 +147,7 @@ export default function EvenementsClient() {
             {[
               { Icon: Wine, title: "Petits groupes", desc: "Maximum 15 personnes pour des échanges de qualité." },
               { Icon: Users, title: "Vignerons présents", desc: "Rencontrez les producteurs qui façonnent ces terroirs." },
-              { Icon: Mail, title: "Sur liste d'attente", desc: "Les événements complets ont une liste. Contactez-nous." },
+              { Icon: Mail, title: "Sur liste d&apos;attente", desc: "Les événements complets ont une liste. Contactez-nous." },
             ].map(({ Icon, title, desc }) => (
               <div key={title} className="flex gap-4">
                 <div className="flex size-9 shrink-0 items-center justify-center rounded-lg border border-[#C9A84C]/20 bg-[#C9A84C]/8">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   AnimatePresence,
@@ -114,14 +115,13 @@ function SplitText({
 
 function Counter({ value, duration = 1.6 }: { value: string; duration?: number }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const [display, setDisplay] = useState(value.replace(/\d/g, "0"));
   const numericOnly = /^[\d]+$/.test(value);
+  const [display, setDisplay] = useState(() =>
+    numericOnly ? value.replace(/\d/g, "0") : value,
+  );
 
   useEffect(() => {
-    if (!numericOnly) {
-      setDisplay(value);
-      return;
-    }
+    if (!numericOnly) return; // valeurs non-numériques rendues directement, pas d'animation.
     const el = ref.current;
     if (!el) return;
     const target = parseInt(value, 10);
@@ -145,7 +145,7 @@ function Counter({ value, duration = 1.6 }: { value: string; duration?: number }
     return () => obs.disconnect();
   }, [value, duration, numericOnly]);
 
-  return <span ref={ref}>{display}</span>;
+  return <span ref={ref}>{numericOnly ? display : value}</span>;
 }
 
 /* ============================================================
@@ -181,11 +181,8 @@ export default function BoulangerieClient({
   const [wordIndex, setWordIndex] = useState(0);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
 
-  // Rotating word — reset si la langue change (mots traduits différents)
-  useEffect(() => {
-    setWordIndex(0);
-  }, [locale]);
-
+  // Rotating word — l'intervalle borne l'index via modulo, donc même si la
+  // langue change en cours de route l'index reste valide. Pas de reset explicite.
   useEffect(() => {
     const id = setInterval(
       () => setWordIndex((i) => (i + 1) % t.hero.rotatingWords.length),
@@ -638,14 +635,17 @@ export default function BoulangerieClient({
           >
             <div className="relative md:col-span-3">
               <div
-                className="aspect-[16/11] overflow-hidden md:aspect-auto md:h-full"
+                className="relative aspect-[16/11] overflow-hidden md:aspect-auto md:h-full"
                 style={{ backgroundColor: fourneeImage.avgColor }}
               >
                 {fourneeImage.src && (
-                  <img
+                  <Image
                     src={fourneeImage.src}
                     alt={fourneeImage.alt || t.fournee.productName}
-                    className="h-full w-full object-cover"
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                    priority
                   />
                 )}
               </div>
@@ -737,10 +737,12 @@ export default function BoulangerieClient({
                     style={{ backgroundColor: p.image?.avgColor }}
                   >
                     {p.image?.src && (
-                      <img
+                      <Image
                         src={p.image.src}
                         alt={p.image.alt || p.name}
-                        className="h-full w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
+                        fill
+                        sizes="(min-width: 1024px) 33vw, 82vw"
+                        className="object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
                       />
                     )}
                     <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-black/60 px-3 py-1 text-[10px] font-mono uppercase tracking-widest backdrop-blur">
@@ -848,11 +850,12 @@ export default function BoulangerieClient({
                           style={{ backgroundColor: step.image?.avgColor }}
                         >
                           {step.image?.src && (
-                            <img
+                            <Image
                               src={step.image.src}
                               alt={step.image.alt || step.title}
-                              loading="lazy"
-                              className="h-full w-full object-cover"
+                              fill
+                              sizes="(min-width: 1024px) 33vw, 80vw"
+                              className="object-cover"
                             />
                           )}
                           <span
@@ -1011,12 +1014,14 @@ export default function BoulangerieClient({
                 } ${i === 3 ? "md:col-span-2" : ""}`}
                 style={{ backgroundColor: photo.avgColor }}
               >
-                <div className="aspect-square">
+                <div className="relative aspect-square">
                   {photo.src && (
-                    <img
+                    <Image
                       src={photo.src}
                       alt={photo.alt || `Boulangerie ${i + 1}`}
-                      className="h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-105"
+                      fill
+                      sizes="(min-width: 1024px) 25vw, 50vw"
+                      className="object-cover transition-transform duration-[1.2s] group-hover:scale-105"
                     />
                   )}
                 </div>

@@ -12,6 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local Claude Code artefacts — worktrees contiennent leurs propres .next.
+    ".claude/**",
+    "**/.next/**",
+    // node_modules au cas où.
+    "node_modules/**",
   ]),
   // Demo pages are intentionally unique playgrounds — relax the strictest rules
   // that punish patterns we accept in those self-contained demos.

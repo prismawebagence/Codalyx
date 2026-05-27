@@ -13,7 +13,7 @@ export default function PolitiqueConfidentialite() {
         <h1 className="font-heading text-3xl font-semibold text-[#0A0A0A] md:text-4xl">
           Politique de confidentialité
         </h1>
-        <p className="mt-4 text-sm text-[#6B7280]">Dernière mise à jour : janvier 2025</p>
+        <p className="mt-4 text-sm text-[#52525B]">Dernière mise à jour : mai 2026</p>
 
         <div className="mt-10">
           <h2 className="font-heading text-xl font-semibold text-[#0A0A0A]">
@@ -44,6 +44,15 @@ export default function PolitiqueConfidentialite() {
 
         <div className="mt-10">
           <h2 className="font-heading text-xl font-semibold text-[#0A0A0A]">
+            Sous-traitants
+          </h2>
+          <p className="mt-3 text-[#52525B] leading-relaxed">
+            Les messages du formulaire de contact sont acheminés via Resend Inc. (États-Unis), prestataire conforme au Data Privacy Framework UE-US. Le site est hébergé sur Vercel Inc. (États-Unis), également Data Privacy Framework. Aucun autre sous-traitant n&apos;a accès aux données personnelles.
+          </p>
+        </div>
+
+        <div className="mt-10">
+          <h2 className="font-heading text-xl font-semibold text-[#0A0A0A]">
             Vos droits
           </h2>
           <p className="mt-3 text-[#6B7280] leading-relaxed">
@@ -62,10 +71,10 @@ export default function PolitiqueConfidentialite() {
 
         <div className="mt-10">
           <h2 className="font-heading text-xl font-semibold text-[#0A0A0A]">
-            Contact DPO
+            Contact et réclamation
           </h2>
-          <p className="mt-3 text-[#6B7280] leading-relaxed">
-            Pour toute question relative à la protection de vos données personnelles, vous pouvez contacter notre délégué à la protection des données à l&apos;adresse : dpo@codalyx.fr. Vous disposez également du droit d&apos;introduire une réclamation auprès de la CNIL (Commission Nationale de l&apos;Informatique et des Libertés).
+          <p className="mt-3 text-[#52525B] leading-relaxed">
+            Pour toute question relative à la protection de vos données personnelles, vous pouvez nous contacter à l&apos;adresse contact@codalyx.fr. Notre structure n&apos;est pas soumise à l&apos;obligation de désigner un Délégué à la Protection des Données (DPO) au sens de l&apos;article 37 du RGPD ; la demande sera traitée directement par le responsable de traitement. Vous disposez également du droit d&apos;introduire une réclamation auprès de la CNIL (www.cnil.fr).
           </p>
         </div>
       </div>

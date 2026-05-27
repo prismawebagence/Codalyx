@@ -325,7 +325,7 @@ export default function OsteopatheClient({
               transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
             >
               <span className="text-[11px] font-mono uppercase tracking-[0.35em] text-[#F5C9B9]">
-                Cabinet d'ostéopathie · Lyon 6
+                Cabinet d&apos;ostéopathie · Lyon 6
               </span>
               <h1
                 className="mt-4 text-5xl font-semibold leading-[0.95] tracking-[-0.02em] sm:text-6xl lg:text-[4.5rem]"
@@ -341,7 +341,7 @@ export default function OsteopatheClient({
                 </span>
               </h1>
               <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/75">
-                Une pratique lente, patiente — centrée sur l'écoute du corps.
+                Une pratique lente, patiente — centrée sur l&apos;écoute du corps.
                 Prise de rendez-vous en ligne, règlement sur place.
               </p>
             </motion.div>
@@ -445,7 +445,7 @@ export default function OsteopatheClient({
                   <span className="absolute inline-flex size-1.5 animate-ping rounded-full bg-[#C06B4E] opacity-70" />
                   <span className="relative inline-flex size-1.5 rounded-full bg-[#C06B4E]" />
                 </span>
-                Cabinet ouvert aujourd'hui
+                Cabinet ouvert aujourd&apos;hui
               </span>
               <h2
                 className="mt-5 text-4xl font-semibold leading-[1] tracking-[-0.02em] text-[#1A1F1B] sm:text-5xl lg:text-[3.25rem]"
@@ -494,7 +494,7 @@ export default function OsteopatheClient({
                 transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
               >
                 <span className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#C06B4E]">
-                  l'approche
+                  l&apos;approche
                 </span>
                 <h2
                   className="mt-4 text-4xl font-semibold leading-[1] tracking-[-0.02em] text-[#1A1F1B] sm:text-5xl lg:text-[3.25rem]"
@@ -510,7 +510,7 @@ export default function OsteopatheClient({
                   </span>
                 </h2>
                 <p className="mt-4 max-w-md text-sm leading-relaxed text-[#1A1F1B]/70">
-                  Cliquez sur une zone du corps pour voir l'angle thérapeutique
+                  Cliquez sur une zone du corps pour voir l&apos;angle thérapeutique
                   qui lui correspond. Aucune manipulation brusque — uniquement
                   des gestes mesurés, adaptés à votre état du jour.
                 </p>
@@ -630,8 +630,8 @@ export default function OsteopatheClient({
               >
                 <div className="space-y-4 text-[15px] leading-relaxed text-[#1A1F1B]/75">
                   <p>
-                    Diplômée de l'École Supérieure d'Ostéopathie en 2013, Camille
-                    a d'abord exercé trois ans en cabinet partagé avant d'ouvrir
+                    Diplômée de l&apos;École Supérieure d&apos;Ostéopathie en 2013, Camille
+                    a d&apos;abord exercé trois ans en cabinet partagé avant d&apos;ouvrir
                     Studio Méridien en 2018.
                   </p>
                   <p>
@@ -815,7 +815,7 @@ export default function OsteopatheClient({
                   <div className="mt-1 text-sm leading-relaxed text-white/90">
                     Métro A · Foch
                     <br />
-                    Vélo'v à 30 m · PMR
+                    Vélo&apos;v à 30 m · PMR
                   </div>
                 </div>
               </div>
@@ -836,7 +836,7 @@ export default function OsteopatheClient({
               <div className="flex items-center gap-3">
                 <Clock className="size-4 text-[#F5C9B9]" />
                 <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/50">
-                  Horaires d'ouverture
+                  Horaires d&apos;ouverture
                 </span>
               </div>
               <ul className="mt-4 grid grid-cols-4 gap-x-4 gap-y-2 sm:grid-cols-7">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -166,18 +166,20 @@ export default function BookingModule() {
     [prestation],
   );
 
-  // Une fois la prestation choisie, on avance. Idem pour la date et le créneau.
-  useEffect(() => {
-    if (prestation && step === 1) setStep(2);
-  }, [prestation, step]);
-
-  useEffect(() => {
-    if (selectedDayIso && step === 2) setStep(3);
-  }, [selectedDayIso, step]);
-
-  useEffect(() => {
-    if (selectedSlot && step === 3) setStep(4);
-  }, [selectedSlot, step]);
+  // Helpers — on avance d'étape directement dans le handler de sélection,
+  // pour éviter `setState` dans un effet (anti-pattern React 19).
+  const choosePrestation = (id: PrestationId) => {
+    setPrestation(id);
+    if (step === 1) setStep(2);
+  };
+  const chooseDay = (iso: string) => {
+    setSelectedDayIso(iso);
+    if (step === 2) setStep(3);
+  };
+  const chooseSlot = (slot: string) => {
+    setSelectedSlot(slot);
+    if (step === 3) setStep(4);
+  };
 
   const goBack = () => {
     if (step === 2) {
@@ -204,7 +206,7 @@ export default function BookingModule() {
     e.preventDefault();
     setSubmitting(true);
     // Simulation réseau — en prod, ici on appellerait un endpoint ou un service
-    // type Calendly / Cal.com. Pour la démo, on se contente d'une pause.
+    // type Calendly / Cal.com. Pour la démo, on se contente d&apos;une pause.
     await new Promise((r) => setTimeout(r, 900));
     setSubmitting(false);
     setStep(5);
@@ -268,7 +270,7 @@ export default function BookingModule() {
                   <button
                     key={p.id}
                     type="button"
-                    onClick={() => setPrestation(p.id)}
+                    onClick={() => choosePrestation(p.id)}
                     className="group relative flex flex-col items-start gap-2 rounded-2xl border border-[#2F4A34]/15 bg-[#F5F1EA]/60 p-5 text-left transition-all hover:-translate-y-0.5 hover:border-[#C06B4E] hover:bg-white hover:shadow-lg"
                   >
                     <div className="flex w-full items-center justify-between">
@@ -319,7 +321,7 @@ export default function BookingModule() {
                       <button
                         key={iso}
                         type="button"
-                        onClick={() => setSelectedDayIso(iso)}
+                        onClick={() => chooseDay(iso)}
                         className={`flex w-20 shrink-0 flex-col items-center gap-1 rounded-2xl border px-2 py-4 transition-all ${
                           isActive
                             ? "-translate-y-0.5 border-[#2F4A34] bg-[#2F4A34] text-white shadow-lg"
@@ -381,7 +383,7 @@ export default function BookingModule() {
                       key={slot}
                       type="button"
                       disabled={busy}
-                      onClick={() => setSelectedSlot(slot)}
+                      onClick={() => chooseSlot(slot)}
                       className={`relative rounded-xl border px-3 py-3 text-sm font-semibold transition-all ${
                         busy
                           ? "cursor-not-allowed border-[#2F4A34]/10 bg-[#F5F1EA] text-[#1A1F1B]/30 line-through"
@@ -514,9 +516,9 @@ export default function BookingModule() {
                 </button>
 
                 <p className="text-xs leading-relaxed text-[#1A1F1B]/50">
-                  En confirmant, vous acceptez d'être contacté·e par le cabinet
-                  pour finaliser votre rendez-vous. Aucun paiement n'est demandé
-                  en ligne — le règlement s'effectue sur place.
+                  En confirmant, vous acceptez d&apos;être contacté·e par le cabinet
+                  pour finaliser votre rendez-vous. Aucun paiement n&apos;est demandé
+                  en ligne — le règlement s&apos;effectue sur place.
                 </p>
               </form>
             </motion.div>
@@ -551,7 +553,7 @@ export default function BookingModule() {
                 Rendez-vous confirmé
               </h3>
               <p className="mt-3 max-w-md text-sm leading-relaxed text-[#1A1F1B]/70">
-                Un e-mail de confirmation vient d'être envoyé à{" "}
+                Un e-mail de confirmation vient d&apos;être envoyé à{" "}
                 <strong className="text-[#1A1F1B]">{form.email}</strong>. À très
                 bientôt, {form.firstName}.
               </p>

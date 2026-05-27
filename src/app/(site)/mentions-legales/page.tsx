@@ -19,7 +19,7 @@ export default function MentionsLegales() {
         </h2>
         <p className="mt-3 text-[#6B7280] leading-relaxed">
           <strong className="text-[#0A0A0A]">Codalyx</strong><br />
-          SIRET : [à compléter]<br />
+          SIRET : en cours d&apos;immatriculation — communiqué sur simple demande à contact@codalyx.fr<br />
           3 Rue Relinde, 67200 Strasbourg, France<br />
           Téléphone : 07 71 65 75 28<br />
           E-mail : contact@codalyx.fr
@@ -28,7 +28,7 @@ export default function MentionsLegales() {
         <h2 className="mt-10 font-heading text-xl font-semibold text-[#0A0A0A]">
           Directeur de la publication
         </h2>
-        <p className="mt-3 text-[#6B7280]">[À compléter]</p>
+        <p className="mt-3 text-[#6B7280]">Codalyx, joignable à contact@codalyx.fr.</p>
 
         <h2 className="mt-10 font-heading text-xl font-semibold text-[#0A0A0A]">
           Hébergeur
