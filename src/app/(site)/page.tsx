@@ -2,16 +2,11 @@ import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
 import TrustBar from "@/components/sections/TrustBar";
 import Problems from "@/components/sections/Problems";
-import OffersGrid from "@/components/sections/OffersGrid";
 import Process from "@/components/sections/Process";
 import Portfolio from "@/components/sections/Portfolio";
 import FAQ from "@/components/sections/FAQ";
-import ContactSection from "@/components/sections/ContactSection";
 import FinalCTA from "@/components/sections/FinalCTA";
-
-export const metadata: Metadata = {
-  alternates: { canonical: "/" },
-};
+import { delaysSummary, maintenances } from "@/lib/offers";
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -22,7 +17,7 @@ const faqJsonLd = {
       name: "Combien de temps faut-il pour créer mon site ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Le délai dépend de la formule choisie : environ 2 semaines pour l'Essentiel, 3 semaines pour le Pro et 4 à 5 semaines pour le Premium.",
+        text: `Le délai dépend de la formule : ${delaysSummary}.`,
       },
     },
     {
@@ -30,35 +25,35 @@ const faqJsonLd = {
       name: "Est-ce que je suis propriétaire de mon site ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Oui, à 100%. Le code source, le contenu et le nom de domaine vous appartiennent.",
+        text: "Oui, à 100 %. Le code source, le contenu et les accès Vercel/GitHub vous sont transférés après paiement intégral.",
       },
     },
     {
       "@type": "Question",
-      name: "Puis-je résilier l'abonnement mensuel ?",
+      name: "La maintenance est-elle obligatoire ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Oui, l'abonnement est sans engagement. Vous pouvez résilier à tout moment avec un préavis de 30 jours.",
+        text: `Non. La ${maintenances[0].name} (${maintenances[0].priceFormatted} €/mois) et la ${maintenances[1].name} (${maintenances[1].priceFormatted} €/mois) sont optionnelles, sans engagement, résiliables avec 30 jours de préavis.`,
       },
     },
   ],
 };
 
+export const metadata: Metadata = {
+  other: {
+    "script:ld+json": JSON.stringify(faqJsonLd),
+  },
+};
+
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c") }}
-      />
       <Hero />
       <TrustBar />
       <Problems />
-      <OffersGrid />
       <Process />
       <Portfolio />
       <FAQ />
-      <ContactSection />
       <FinalCTA />
     </>
   );

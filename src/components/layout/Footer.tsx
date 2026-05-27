@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 const serviceLinks = [
-  { href: "/offres/essentiel", label: "Essentiel" },
-  { href: "/offres/pro", label: "Pro" },
-  { href: "/offres/premium", label: "Premium" },
+  { href: "/offres/vitrine", label: "Pack Vitrine" },
+  { href: "/offres/business", label: "Pack Business" },
+  { href: "/offres/pro", label: "Pack Pro" },
+  { href: "/offres#maintenance", label: "Maintenance" },
 ];
 
 const agenceLinks = [
@@ -45,24 +46,10 @@ export function Footer() {
               Agence web strasbourgeoise spécialisée dans la création de sites
               internet performants et sur-mesure pour les entreprises en Alsace.
             </p>
-            <address className="mt-4 text-sm not-italic leading-relaxed text-white/70">
+            <address className="mt-4 text-sm not-italic leading-relaxed text-white/50">
               3 Rue Relinde
               <br />
               67200 Strasbourg
-              <br />
-              <a
-                href="mailto:contact@codalyx.fr"
-                className="transition-colors hover:text-[#FF6B2C]"
-              >
-                contact@codalyx.fr
-              </a>
-              <br />
-              <a
-                href="tel:+33612345678"
-                className="transition-colors hover:text-[#FF6B2C]"
-              >
-                06 12 34 56 78
-              </a>
             </address>
           </div>
 
@@ -125,8 +112,8 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col items-center justify-between gap-2 border-t border-white/10 py-6 text-xs text-white/70 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} Codalyx. Tous droits réservés.</p>
+        <div className="flex flex-col items-center justify-between gap-2 border-t border-white/10 py-6 text-xs text-white/50 sm:flex-row">
+          <p>&copy; 2026 Codalyx. Tous droits réservés.</p>
           <p>Fait avec soin à Strasbourg</p>
         </div>
       </div>
