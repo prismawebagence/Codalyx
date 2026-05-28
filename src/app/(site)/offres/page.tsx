@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Check, X, ArrowRight, Clock, Wallet, Sparkles } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import { offers, maintenances } from "@/lib/offers";
+import OfferCardCompact from "@/components/sections/OfferCardCompact";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
 
@@ -61,102 +61,12 @@ export default function OffresPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-3">
             {offers.map((offer) => (
-              <article
-                key={offer.slug}
-                className={`relative flex flex-col rounded-3xl bg-white p-8 transition-shadow hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] ${
-                  offer.featured
-                    ? "border-2 border-[#FF6B2C] lg:-mt-4 lg:mb-4"
-                    : "border border-[#E4E4E7]"
-                }`}
-              >
-                {offer.featured && (
-                  <span className="absolute -top-3 left-8 rounded-full bg-[#FF6B2C] px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-white">
-                    Le plus choisi
-                  </span>
-                )}
-
-                <header>
-                  <h2 className="font-heading text-2xl font-semibold text-[#0A0A0A]">
-                    {offer.name}
-                  </h2>
-                  <p className="mt-2 text-sm text-[#71717A]">{offer.tagline}</p>
-                </header>
-
-                <div className="mt-6 border-t border-[#E4E4E7] pt-6">
-                  <div className="flex items-baseline gap-2">
-                    <span className="font-heading text-5xl font-bold text-[#0A0A0A]">
-                      {offer.priceFormatted}
-                    </span>
-                    <span className="text-xl text-[#0A0A0A]">&euro;</span>
-                  </div>
-                  <p className="mt-1 text-xs text-[#71717A]">Net de TVA · prix fixe, pas de surcoût</p>
-
-                  <dl className="mt-5 space-y-2.5 text-sm">
-                    <div className="flex items-start gap-2.5">
-                      <Clock className="mt-0.5 size-4 shrink-0 text-[#FF6B2C]" />
-                      <span className="text-[#52525B]">{offer.delay}</span>
-                    </div>
-                    <div className="flex items-start gap-2.5">
-                      <Wallet className="mt-0.5 size-4 shrink-0 text-[#FF6B2C]" />
-                      <span className="text-[#52525B]">{offer.payment}</span>
-                    </div>
-                  </dl>
-                </div>
-
-                <div className="mt-6 border-t border-[#E4E4E7] pt-6">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-[#71717A]">
-                    Ce qui est inclus
-                  </p>
-                  <ul className="mt-3 space-y-2.5">
-                    {offer.included.map((item) => (
-                      <li key={item} className="flex items-start gap-2.5 text-sm">
-                        <Check className="mt-0.5 size-4 shrink-0 text-[#0A0A0A]" />
-                        <span className="text-[#0A0A0A] leading-snug">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="mt-5 border-t border-[#E4E4E7] pt-5">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-[#71717A]">
-                    Non inclus
-                  </p>
-                  <ul className="mt-3 space-y-2">
-                    {offer.excluded.map((item) => (
-                      <li key={item} className="flex items-start gap-2.5 text-xs">
-                        <X className="mt-0.5 size-3.5 shrink-0 text-[#71717A]" />
-                        <span className="text-[#52525B] leading-snug">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="mt-6 border-t border-[#E4E4E7] pt-6">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-[#71717A]">
-                    Pour qui
-                  </p>
-                  <p className="mt-2 text-sm text-[#0A0A0A] leading-relaxed">{offer.ideal}</p>
-                  <p className="mt-1.5 text-xs text-[#71717A] italic">Ex&nbsp;: {offer.examples}</p>
-                </div>
-
-                <blockquote className="mt-6 border-l-2 border-[#FF6B2C] pl-4 text-sm italic text-[#0A0A0A] leading-relaxed">
-                  « {offer.pitch} »
-                </blockquote>
-
-                <Link
-                  href={`/offres/${offer.slug}`}
-                  className={`mt-8 inline-flex h-12 items-center justify-center gap-1.5 rounded-full px-6 text-sm font-semibold transition-all active:scale-[0.98] ${
-                    offer.featured
-                      ? "bg-[#FF6B2C] text-white hover:bg-[#E55A1F]"
-                      : "border border-[#0A0A0A] text-[#0A0A0A] hover:bg-[#0A0A0A] hover:text-white"
-                  }`}
-                >
-                  Voir le détail
-                  <ArrowRight className="size-4" />
-                </Link>
-              </article>
+              <OfferCardCompact key={offer.slug} offer={offer} />
             ))}
           </div>
+          <p className="mt-6 text-center text-xs text-[#71717A]">
+            Cliquez sur « En savoir plus » pour voir le détail complet de chaque pack (inclus, non inclus, profil idéal).
+          </p>
         </div>
       </section>
 
