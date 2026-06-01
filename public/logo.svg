@@ -3,11 +3,10 @@
   <!-- Mark -->
   <g>
     <rect x="2" y="8" width="40" height="40" rx="10" fill="#0A0A0A"/>
-    <line x1="7" y1="28" x2="17" y2="28" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
-    <path d="M17 36 L26 21 L26 36 Z" fill="none" stroke="#FF6B2C" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
-    <line x1="26" y1="24" x2="36" y2="19" stroke="#FFB366" stroke-width="1.6" stroke-linecap="round"/>
-    <line x1="26" y1="28" x2="36" y2="27" stroke="#FF8B4D" stroke-width="1.6" stroke-linecap="round"/>
-    <line x1="26" y1="32" x2="36" y2="35" stroke="#FF6B2C" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M 7.5 38 L 7.5 18 L 13.5 18 Q 17.5 18 17.5 22 Q 17.5 26 13.5 26 L 7.5 26"
+          fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 21 18 Q 22 36 25.5 36 Q 27.5 36 28.5 26 Q 30 36 32 36 Q 35.5 36 36.5 18"
+          fill="none" stroke="#FF6B2C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <!-- Wordmark -->
   <g font-family="'Geist','Inter','Segoe UI',system-ui,sans-serif" fill="#0A0A0A">

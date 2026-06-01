@@ -12,46 +12,41 @@
     </radialGradient>
   </defs>
 
-  <!-- Background -->
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
 
-  <!-- Large decorative prism mark on the right -->
-  <g transform="translate(900, 220) scale(3.6)" opacity="0.18">
-    <line x1="-30" y1="40" x2="-5" y2="40" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M-5 60 L25 14 L25 60 Z" fill="none" stroke="#FF6B2C" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-    <line x1="25" y1="22" x2="55" y2="8" stroke="#FFB366" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="25" y1="35" x2="55" y2="33" stroke="#FF8B4D" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="25" y1="48" x2="55" y2="58" stroke="#FF6B2C" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Large decorative PW mark on the right -->
+  <g transform="translate(820, 180) scale(8)" opacity="0.16">
+    <path d="M 9 35 L 9 14 L 16 14 Q 21 14 21 18.5 Q 21 23 16 23 L 9 23"
+          fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 25 14 Q 26 33 30 33 Q 32 33 33.5 23 Q 35 33 37 33 Q 41 33 42 14"
+          fill="none" stroke="#FF6B2C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <!-- Brand mark (small, top-left) -->
+  <!-- Brand mark (top-left) -->
   <g transform="translate(80, 80)">
     <rect width="64" height="64" rx="14" fill="#0A0A0A" stroke="#FF6B2C" stroke-width="2"/>
-    <line x1="11" y1="32" x2="25" y2="32" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
-    <path d="M25 44 L39 22 L39 44 Z" fill="none" stroke="#FF6B2C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-    <line x1="39" y1="26" x2="53" y2="18" stroke="#FFB366" stroke-width="2.2" stroke-linecap="round"/>
-    <line x1="39" y1="32" x2="53" y2="30" stroke="#FF8B4D" stroke-width="2.2" stroke-linecap="round"/>
-    <line x1="39" y1="38" x2="53" y2="44" stroke="#FF6B2C" stroke-width="2.2" stroke-linecap="round"/>
+    <g transform="translate(8, 8) scale(1)">
+      <path d="M 9 35 L 9 14 L 16 14 Q 21 14 21 18.5 Q 21 23 16 23 L 9 23"
+            fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 25 14 Q 26 33 30 33 Q 32 33 33.5 23 Q 35 33 37 33 Q 41 33 42 14"
+            fill="none" stroke="#FF6B2C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
   </g>
 
-  <!-- Wordmark next to mark -->
   <text x="170" y="125" font-family="'Geist','Inter',Helvetica,Arial,sans-serif" font-size="34" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">
     Prisma<tspan fill="#FF6B2C">Web</tspan>
   </text>
 
-  <!-- Main title -->
   <text x="80" y="320" font-family="'Fraunces',Georgia,serif" font-size="92" font-weight="600" fill="#FFFFFF" letter-spacing="-2">
     <tspan x="80" dy="0">Création de sites</tspan>
     <tspan x="80" dy="100">web premium.</tspan>
   </text>
 
-  <!-- Subtitle -->
   <text x="80" y="500" font-family="'Geist',Helvetica,Arial,sans-serif" font-size="26" fill="#FFFFFF" opacity="0.7">
     À Strasbourg, en Alsace, et partout en France.
   </text>
 
-  <!-- Bottom accent bar + URL -->
   <rect x="80" y="555" width="120" height="4" rx="2" fill="#FF6B2C"/>
   <text x="80" y="595" font-family="'Geist',Helvetica,Arial,sans-serif" font-size="22" font-weight="600" fill="#FF6B2C">
     prismaweb.fr

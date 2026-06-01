@@ -51,11 +51,10 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2" aria-label="PrismaWeb — Accueil">
           <div className="flex size-8 items-center justify-center rounded-lg bg-[#0A0A0A]">
             <svg viewBox="0 0 48 48" className="size-5" aria-hidden="true">
-              <line x1="8" y1="24" x2="19" y2="24" stroke="#FFFFFF" strokeWidth="1.8" strokeLinecap="round"/>
-              <path d="M19 33 L29 17 L29 33 Z" fill="none" stroke="#FF6B2C" strokeWidth="2.6" strokeLinejoin="round" strokeLinecap="round"/>
-              <line x1="29" y1="20" x2="40" y2="14" stroke="#FFB366" strokeWidth="1.8" strokeLinecap="round"/>
-              <line x1="29" y1="24" x2="40" y2="22" stroke="#FF8B4D" strokeWidth="1.8" strokeLinecap="round"/>
-              <line x1="29" y1="28" x2="40" y2="30" stroke="#FF6B2C" strokeWidth="1.8" strokeLinecap="round"/>
+              <path d="M 9 35 L 9 14 L 16 14 Q 21 14 21 18.5 Q 21 23 16 23 L 9 23"
+                    fill="none" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M 25 14 Q 26 33 30 33 Q 32 33 33.5 23 Q 35 33 37 33 Q 41 33 42 14"
+                    fill="none" stroke="#FF6B2C" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
           <span className="font-heading text-xl font-bold tracking-tight text-[#0A0A0A]">
