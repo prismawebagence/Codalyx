@@ -1153,7 +1153,7 @@ export default function BoulangerieClient({
                     href="/"
                     className="text-[#F4B942] underline-offset-4 hover:underline"
                   >
-                    Codalyx
+                    PrismaWeb
                   </Link>
                   {t.footer.disclaimerSuffix}
                 </p>

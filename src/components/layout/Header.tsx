@@ -48,15 +48,18 @@ export function Header() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2" aria-label="Codalyx — Accueil">
-          <div className="flex size-8 items-center justify-center rounded-lg bg-[#1A1A1A]">
+        <Link href="/" className="flex items-center gap-2" aria-label="PrismaWeb — Accueil">
+          <div className="flex size-8 items-center justify-center rounded-lg bg-[#0A0A0A]">
             <svg viewBox="0 0 48 48" className="size-5" aria-hidden="true">
-              <path d="M30 16 L18 24 L30 32" fill="none" stroke="#FF6B2C" strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round"/>
-              <circle cx="35" cy="24" r="2.6" fill="#FF6B2C"/>
+              <line x1="8" y1="24" x2="19" y2="24" stroke="#FFFFFF" strokeWidth="1.8" strokeLinecap="round"/>
+              <path d="M19 33 L29 17 L29 33 Z" fill="none" stroke="#FF6B2C" strokeWidth="2.6" strokeLinejoin="round" strokeLinecap="round"/>
+              <line x1="29" y1="20" x2="40" y2="14" stroke="#FFB366" strokeWidth="1.8" strokeLinecap="round"/>
+              <line x1="29" y1="24" x2="40" y2="22" stroke="#FF8B4D" strokeWidth="1.8" strokeLinecap="round"/>
+              <line x1="29" y1="28" x2="40" y2="30" stroke="#FF6B2C" strokeWidth="1.8" strokeLinecap="round"/>
             </svg>
           </div>
           <span className="font-heading text-xl font-bold tracking-tight text-[#0A0A0A]">
-            Coda<span className="text-[#FF6B2C]">l</span>yx
+            Prisma<span className="text-[#FF6B2C]">Web</span>
           </span>
         </Link>
 

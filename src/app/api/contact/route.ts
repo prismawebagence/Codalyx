@@ -95,8 +95,8 @@ export async function POST(request: Request) {
 
     // 6. Envoi via Resend (si configuré)
     const apiKey = process.env.RESEND_API_KEY;
-    const to = process.env.CONTACT_TO_EMAIL || "contact@codalyx.fr";
-    const from = process.env.CONTACT_FROM_EMAIL || "Codalyx <onboarding@resend.dev>";
+    const to = process.env.CONTACT_TO_EMAIL || "contact@prismaweb.fr";
+    const from = process.env.CONTACT_FROM_EMAIL || "PrismaWeb <onboarding@resend.dev>";
 
     if (apiKey) {
       const resend = new Resend(apiKey);

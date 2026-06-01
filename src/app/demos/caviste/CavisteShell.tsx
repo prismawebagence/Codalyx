@@ -412,7 +412,7 @@ function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-[#C9A84C]/10 pt-6 sm:flex-row">
-          <div className="text-xs text-[#F5F0E8]/25">© 2026 La Cave du Sommelier · Site de démonstration Codalyx</div>
+          <div className="text-xs text-[#F5F0E8]/25">© 2026 La Cave du Sommelier · Site de démonstration PrismaWeb</div>
           <div className="text-xs text-[#F5F0E8]/25">L&apos;abus d&apos;alcool est dangereux pour la santé — à consommer avec modération</div>
         </div>
       </div>

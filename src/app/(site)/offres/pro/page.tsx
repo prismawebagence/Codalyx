@@ -5,7 +5,7 @@ import { buildOfferJsonLd, getOffer } from "@/lib/offers";
 const offer = getOffer("pro")!;
 
 export const metadata: Metadata = {
-  title: `${offer.name} — 2 490€ net | Site premium + SEO | Codalyx`,
+  title: `${offer.name} — 2 490€ net | Site premium + SEO | PrismaWeb`,
   description:
     "Site jusqu’à 15 pages, blog SEO, animations, performance Lighthouse > 90. Le niveau d’une agence parisienne pour 2 490€ net.",
 };

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ExternalLink, Sparkles } from "lucide-react";
 
 /**
- * Bannière de démo Codalyx (FR uniquement pour cette démo).
+ * Bannière de démo PrismaWeb (FR uniquement pour cette démo).
  */
 export default function DemoBanner() {
   return (
@@ -12,7 +12,7 @@ export default function DemoBanner() {
           <Sparkles className="size-4 shrink-0 text-[#C06B4E]" />
           <span>
             Site de démonstration créé par{" "}
-            <strong className="font-semibold">Codalyx</strong>. Entreprise
+            <strong className="font-semibold">PrismaWeb</strong>. Entreprise
             fictive à vocation illustrative.
           </span>
         </span>
@@ -20,7 +20,7 @@ export default function DemoBanner() {
           href="/"
           className="inline-flex items-center gap-1.5 rounded-full bg-[#C06B4E] px-3 py-1 font-medium text-white transition-colors hover:bg-[#a4573e]"
         >
-          Retour au site Codalyx
+          Retour au site PrismaWeb
           <ExternalLink className="size-3" />
         </Link>
       </div>

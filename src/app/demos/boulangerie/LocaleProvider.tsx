@@ -30,7 +30,7 @@ interface LocaleContextValue {
 
 const LocaleContext = createContext<LocaleContextValue | null>(null);
 
-const STORAGE_KEY = "codalyx-demo-locale";
+const STORAGE_KEY = "prismaweb-demo-locale";
 
 function readStoredLocale(): LocaleCode {
   if (typeof window === "undefined") return "fr";

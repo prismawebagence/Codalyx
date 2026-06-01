@@ -20,8 +20,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "E-mail",
-    value: "contact@codalyx.fr",
-    href: "mailto:contact@codalyx.fr",
+    value: "contact@prismaweb.fr",
+    href: "mailto:contact@prismaweb.fr",
   },
   {
     icon: Clock,

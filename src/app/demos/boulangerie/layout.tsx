@@ -17,9 +17,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Maison Farine — Démo Codalyx",
+  title: "Maison Farine — Démo PrismaWeb",
   description:
-    "Site de démonstration créé par Codalyx. Entreprise fictive à vocation illustrative.",
+    "Site de démonstration créé par PrismaWeb. Entreprise fictive à vocation illustrative.",
   robots: { index: false, follow: false },
 };
 

@@ -420,7 +420,7 @@ export default function OsteopatheClient({
           <div className="relative mt-8 flex items-center justify-between text-[10px] font-mono uppercase tracking-[0.25em] text-white/40">
             <span>Démo — 2026</span>
             <Link href="/" className="hover:text-[#F5C9B9]">
-              par Codalyx →
+              par PrismaWeb →
             </Link>
           </div>
         </aside>
@@ -857,7 +857,7 @@ export default function OsteopatheClient({
             <div className="mt-auto flex flex-col items-start justify-between gap-2 border-t border-white/10 pt-6 text-[10px] font-mono uppercase tracking-[0.25em] text-white/40 sm:flex-row sm:items-center">
               <span>© {new Date().getFullYear()} Studio Méridien — démo fictive</span>
               <Link href="/" className="hover:text-[#F5C9B9]">
-                créé par Codalyx →
+                créé par PrismaWeb →
               </Link>
             </div>
           </section>

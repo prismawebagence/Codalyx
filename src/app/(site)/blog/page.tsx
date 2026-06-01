@@ -3,7 +3,7 @@ import { Sparkles, Mail } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog | Conseils web & SEO pour entreprises | Codalyx",
+  title: "Blog | Conseils web & SEO pour entreprises | PrismaWeb",
   description:
     "Articles et conseils sur la création de site internet, le SEO local et la stratégie digitale pour les entreprises à Strasbourg et en Alsace.",
 };

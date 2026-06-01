@@ -6,7 +6,7 @@ import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "Offres & tarifs | Création de site internet à Strasbourg | Codalyx",
+  title: "Offres & tarifs | Création de site internet à Strasbourg | PrismaWeb",
   description:
     "Trois packs transparents : Vitrine 790€, Business 1 490€, Pro 2 490€. Maintenance Contenu 99€/mois ou Maintenance Technique 69€/mois. Net de TVA, sans surprise.",
 };
@@ -19,7 +19,7 @@ const jsonLd = {
     position: i + 1,
     name: offer.name,
     description: offer.pitch,
-    provider: { "@type": "LocalBusiness", name: "Codalyx" },
+    provider: { "@type": "LocalBusiness", name: "PrismaWeb" },
     offers: {
       "@type": "Offer",
       price: offer.price,

@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Studio Méridien — Ostéopathie à Lyon · Démo Codalyx",
+  title: "Studio Méridien — Ostéopathie à Lyon · Démo PrismaWeb",
   description:
-    "Site de démonstration créé par Codalyx. Cabinet d'ostéopathie fictif à vocation illustrative.",
+    "Site de démonstration créé par PrismaWeb. Cabinet d'ostéopathie fictif à vocation illustrative.",
   robots: { index: false, follow: false },
 };
 

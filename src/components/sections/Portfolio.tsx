@@ -75,7 +75,7 @@ export default function Portfolio() {
         <SectionTitle
           tag={"NOS RÉALISATIONS"}
           title={"Trois démos pour illustrer notre savoir-faire"}
-          description={"Codalyx démarre son activité en 2026. Voici trois projets de démonstration représentatifs des types de sites que nous créons."}
+          description={"PrismaWeb démarre son activité en 2026. Voici trois projets de démonstration représentatifs des types de sites que nous créons."}
         />
 
         <motion.div

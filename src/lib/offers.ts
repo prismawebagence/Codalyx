@@ -191,7 +191,7 @@ export function buildOfferJsonLd(offer: Offer) {
     "@context": "https://schema.org",
     "@type": "Service",
     name: offer.name,
-    provider: { "@type": "LocalBusiness", name: "Codalyx" },
+    provider: { "@type": "LocalBusiness", name: "PrismaWeb" },
     description: offer.pitch,
     offers: { "@type": "Offer", price: offer.price, priceCurrency: "EUR" },
   } as const;

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://codalyx.fr/sitemap.xml",
+    sitemap: "https://prismaweb.fr/sitemap.xml",
   };
 }

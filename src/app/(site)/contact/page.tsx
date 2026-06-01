@@ -3,9 +3,9 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import ContactForm from "@/components/shared/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact | Codalyx — Agence Web Strasbourg",
+  title: "Contact | PrismaWeb — Agence Web Strasbourg",
   description:
-    "Contactez Codalyx pour votre projet de création de site internet à Strasbourg. Devis gratuit sous 24h. 3 Rue Relinde, 67200 Strasbourg.",
+    "Contactez PrismaWeb pour votre projet de création de site internet à Strasbourg. Devis gratuit sous 24h. 3 Rue Relinde, 67200 Strasbourg.",
   alternates: { canonical: "/contact" },
 };
 
@@ -24,8 +24,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "E-mail",
-    value: "contact@codalyx.fr",
-    href: "mailto:contact@codalyx.fr",
+    value: "contact@prismaweb.fr",
+    href: "mailto:contact@prismaweb.fr",
   },
   {
     icon: Clock,

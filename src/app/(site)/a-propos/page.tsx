@@ -3,9 +3,9 @@ import { Target, Heart, Shield, MapPin } from "lucide-react";
 import FinalCTA from "@/components/sections/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "À propos | Codalyx — Agence Web Strasbourg",
+  title: "À propos | PrismaWeb — Agence Web Strasbourg",
   description:
-    "Découvrez Codalyx, agence web basée à Strasbourg. Notre mission : rendre le web accessible aux artisans et PME d'Alsace avec des sites performants.",
+    "Découvrez PrismaWeb, agence web basée à Strasbourg. Notre mission : rendre le web accessible aux artisans et PME d'Alsace avec des sites performants.",
   alternates: { canonical: "/a-propos" },
 };
 
@@ -43,7 +43,7 @@ export default function AProposPage() {
               Le web, au service des entrepreneurs
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-[#6B7280]">
-              Codalyx est née d&apos;un constat simple : trop d&apos;artisans, de
+              PrismaWeb est née d&apos;un constat simple : trop d&apos;artisans, de
               commerçants et de professions libérales en Alsace n&apos;ont pas de
               présence en ligne digne de leur savoir-faire. Notre mission est de
               changer ça.
@@ -53,7 +53,7 @@ export default function AProposPage() {
           {/* Story */}
           <div className="mx-auto mt-16 max-w-3xl space-y-6 text-[#0A0A0A]">
             <p className="leading-relaxed">
-              Codalyx est une jeune agence web fondée à Strasbourg en 2026. Notre
+              PrismaWeb est une jeune agence web fondée à Strasbourg en 2026. Notre
               ambition : proposer aux entreprises locales une alternative aux
               templates génériques et aux grosses structures impersonnelles.
               Chaque site est pensé pour <strong>un métier</strong>, <strong>un territoire</strong> et <strong>des clients précis</strong>.

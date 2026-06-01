@@ -5,7 +5,7 @@ import { buildOfferJsonLd, getOffer } from "@/lib/offers";
 const offer = getOffer("vitrine")!;
 
 export const metadata: Metadata = {
-  title: `${offer.name} — 790€ net | Site vitrine Strasbourg | Codalyx`,
+  title: `${offer.name} — 790€ net | Site vitrine Strasbourg | PrismaWeb`,
   description:
     "Site vitrine professionnel 3 à 5 pages, responsive, livré en 5 à 7 jours. Hébergement Vercel inclus à vie. 790€ net de TVA.",
 };

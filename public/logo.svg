@@ -1,14 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" role="img" aria-label="Codalyx">
-  <title>Codalyx</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" role="img" aria-label="PrismaWeb">
+  <title>PrismaWeb</title>
   <!-- Mark -->
   <g>
-    <rect x="2" y="8" width="40" height="40" rx="10" fill="#1A1A1A"/>
-    <!-- Stylized C formed by two chevrons -->
-    <path d="M28 20 L18 28 L28 36" fill="none" stroke="#FF6B2C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="32.5" cy="28" r="2.2" fill="#FF6B2C"/>
+    <rect x="2" y="8" width="40" height="40" rx="10" fill="#0A0A0A"/>
+    <line x1="7" y1="28" x2="17" y2="28" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M17 36 L26 21 L26 36 Z" fill="none" stroke="#FF6B2C" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+    <line x1="26" y1="24" x2="36" y2="19" stroke="#FFB366" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="26" y1="28" x2="36" y2="27" stroke="#FF8B4D" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="26" y1="32" x2="36" y2="35" stroke="#FF6B2C" stroke-width="1.6" stroke-linecap="round"/>
   </g>
   <!-- Wordmark -->
-  <g font-family="'Inter','Segoe UI',system-ui,sans-serif" fill="#0A0A0A">
-    <text x="52" y="37" font-size="24" font-weight="700" letter-spacing="-0.5">Coda<tspan fill="#FF6B2C">l</tspan>yx</text>
+  <g font-family="'Geist','Inter','Segoe UI',system-ui,sans-serif" fill="#0A0A0A">
+    <text x="52" y="37" font-size="24" font-weight="700" letter-spacing="-0.5">Prisma<tspan fill="#FF6B2C">Web</tspan></text>
   </g>
 </svg>

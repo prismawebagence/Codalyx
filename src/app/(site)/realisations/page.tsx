@@ -3,7 +3,7 @@ import Portfolio from "@/components/sections/Portfolio";
 import FinalCTA from "@/components/sections/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "Réalisations & démos | Codalyx — Agence Web Strasbourg",
+  title: "Réalisations & démos | PrismaWeb — Agence Web Strasbourg",
   description:
     "Découvrez nos projets de démonstration : sites vitrines, sites avec réservation en ligne et e-commerce pensés pour les entreprises alsaciennes.",
   alternates: { canonical: "/realisations" },
@@ -21,7 +21,7 @@ export default function RealisationsPage() {
             Nos démos
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7280]">
-            Codalyx démarre son activité en 2026. En attendant nos premières réalisations clients, voici trois projets de démonstration qui illustrent concrètement ce que nous savons construire.
+            PrismaWeb démarre son activité en 2026. En attendant nos premières réalisations clients, voici trois projets de démonstration qui illustrent concrètement ce que nous savons construire.
           </p>
         </div>
       </section>

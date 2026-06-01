@@ -5,7 +5,7 @@ import { ExternalLink, Sparkles } from "lucide-react";
 import { useLocale } from "./LocaleProvider";
 
 /**
- * Bannière de démo Codalyx.
+ * Bannière de démo PrismaWeb.
  *
  * Client Component car le texte « Site de démonstration créé par… »
  * est localisé via useLocale. Le sélecteur de langue est dans la

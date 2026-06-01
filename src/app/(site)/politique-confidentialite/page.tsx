@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité | Codalyx",
-  description: "Politique de confidentialité et protection des données personnelles de Codalyx.",
+  title: "Politique de confidentialité | PrismaWeb",
+  description: "Politique de confidentialité et protection des données personnelles de PrismaWeb.",
   alternates: { canonical: "/politique-confidentialite" },
 };
 
@@ -56,7 +56,7 @@ export default function PolitiqueConfidentialite() {
             Vos droits
           </h2>
           <p className="mt-3 text-[#6B7280] leading-relaxed">
-            Conformément au RGPD, vous disposez des droits suivants : droit d&apos;accès, de rectification, d&apos;effacement, de limitation du traitement, de portabilité des données et d&apos;opposition. Pour exercer ces droits, contactez-nous par e-mail à contact@codalyx.fr ou par courrier à l&apos;adresse : Codalyx, 3 Rue Relinde, 67200 Strasbourg.
+            Conformément au RGPD, vous disposez des droits suivants : droit d&apos;accès, de rectification, d&apos;effacement, de limitation du traitement, de portabilité des données et d&apos;opposition. Pour exercer ces droits, contactez-nous par e-mail à contact@prismaweb.fr ou par courrier à l&apos;adresse : PrismaWeb, 3 Rue Relinde, 67200 Strasbourg.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export default function PolitiqueConfidentialite() {
             Contact et réclamation
           </h2>
           <p className="mt-3 text-[#52525B] leading-relaxed">
-            Pour toute question relative à la protection de vos données personnelles, vous pouvez nous contacter à l&apos;adresse contact@codalyx.fr. Notre structure n&apos;est pas soumise à l&apos;obligation de désigner un Délégué à la Protection des Données (DPO) au sens de l&apos;article 37 du RGPD ; la demande sera traitée directement par le responsable de traitement. Vous disposez également du droit d&apos;introduire une réclamation auprès de la CNIL (www.cnil.fr).
+            Pour toute question relative à la protection de vos données personnelles, vous pouvez nous contacter à l&apos;adresse contact@prismaweb.fr. Notre structure n&apos;est pas soumise à l&apos;obligation de désigner un Délégué à la Protection des Données (DPO) au sens de l&apos;article 37 du RGPD ; la demande sera traitée directement par le responsable de traitement. Vous disposez également du droit d&apos;introduire une réclamation auprès de la CNIL (www.cnil.fr).
           </p>
         </div>
       </div>

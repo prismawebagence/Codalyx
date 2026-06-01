@@ -17,7 +17,7 @@ interface BookingCTAProps {
   variant?: "default" | "outline";
 }
 
-// Calendly configuration — colors match the Codalyx brand palette.
+// Calendly configuration — colors match the PrismaWeb brand palette.
 const CALENDLY_URL = "https://calendly.com/sank4bob/30min";
 const CALENDLY_PARAMS = new URLSearchParams({
   hide_gdpr_banner: "1",
@@ -25,7 +25,7 @@ const CALENDLY_PARAMS = new URLSearchParams({
   text_color: "0A0A0A",
   background_color: "ffffff",
 }).toString();
-const CALENDLY_EMBED_URL = `${CALENDLY_URL}?embed_domain=codalyx.fr&embed_type=Inline&${CALENDLY_PARAMS}`;
+const CALENDLY_EMBED_URL = `${CALENDLY_URL}?embed_domain=prismaweb.fr&embed_type=Inline&${CALENDLY_PARAMS}`;
 
 export default function BookingCTA({
   children,

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://codalyx.fr";
+  const baseUrl = "https://prismaweb.fr";
   const now = new Date();
 
   return [

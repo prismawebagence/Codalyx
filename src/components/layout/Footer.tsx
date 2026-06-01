@@ -31,15 +31,18 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {/* Col 1 — Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2" aria-label="Codalyx — Accueil">
+            <Link href="/" className="inline-flex items-center gap-2" aria-label="PrismaWeb — Accueil">
               <div className="flex size-8 items-center justify-center rounded-lg bg-white/10">
                 <svg viewBox="0 0 48 48" className="size-5" aria-hidden="true">
-                  <path d="M30 16 L18 24 L30 32" fill="none" stroke="#FF6B2C" strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round"/>
-                  <circle cx="35" cy="24" r="2.6" fill="#FF6B2C"/>
+                  <line x1="8" y1="24" x2="19" y2="24" stroke="#FFFFFF" strokeWidth="1.8" strokeLinecap="round"/>
+                  <path d="M19 33 L29 17 L29 33 Z" fill="none" stroke="#FF6B2C" strokeWidth="2.6" strokeLinejoin="round" strokeLinecap="round"/>
+                  <line x1="29" y1="20" x2="40" y2="14" stroke="#FFB366" strokeWidth="1.8" strokeLinecap="round"/>
+                  <line x1="29" y1="24" x2="40" y2="22" stroke="#FF8B4D" strokeWidth="1.8" strokeLinecap="round"/>
+                  <line x1="29" y1="28" x2="40" y2="30" stroke="#FF6B2C" strokeWidth="1.8" strokeLinecap="round"/>
                 </svg>
               </div>
               <span className="font-heading text-xl font-bold tracking-tight text-white">
-                Coda<span className="text-[#FF6B2C]">l</span>yx
+                Prisma<span className="text-[#FF6B2C]">Web</span>
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
@@ -113,7 +116,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-2 border-t border-white/10 py-6 text-xs text-white/50 sm:flex-row">
-          <p>&copy; 2026 Codalyx. Tous droits réservés.</p>
+          <p>&copy; 2026 PrismaWeb. Tous droits réservés.</p>
           <p>Fait avec soin à Strasbourg</p>
         </div>
       </div>

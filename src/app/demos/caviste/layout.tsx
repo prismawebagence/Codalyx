@@ -19,9 +19,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "La Cave du Sommelier — Vins d'Exception à Strasbourg · Démo Codalyx",
+  title: "La Cave du Sommelier — Vins d'Exception à Strasbourg · Démo PrismaWeb",
   description:
-    "Caviste premium fictif à Strasbourg. Site de démonstration créé par Codalyx pour illustrer la création de boutiques e-commerce de luxe.",
+    "Caviste premium fictif à Strasbourg. Site de démonstration créé par PrismaWeb pour illustrer la création de boutiques e-commerce de luxe.",
   robots: { index: false, follow: false },
 };
 

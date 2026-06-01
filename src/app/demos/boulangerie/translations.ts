@@ -135,9 +135,9 @@ export const translations: Record<LocaleCode, Translations> = {
   fr: {
     demoBanner: {
       notice: "Site de démonstration créé par",
-      by: "Codalyx",
+      by: "PrismaWeb",
       suffix: "— Entreprise fictive à vocation illustrative",
-      back: "Retour sur codalyx.fr",
+      back: "Retour sur prismaweb.fr",
     },
     nav: {
       fournee: "Fournée",
@@ -314,7 +314,7 @@ export const translations: Record<LocaleCode, Translations> = {
       disclaimerPrefix: "Site fictif créé à des fins de démonstration par",
       disclaimerSuffix: ". Aucun commerce sous ce nom à cette adresse.",
       photosBy: "Photographies fournies par",
-      copyright: "© 2026 — Démo Codalyx",
+      copyright: "© 2026 — Démo PrismaWeb",
       coords: "Strasbourg · 48°35′N 07°44′E",
     },
     switcher: {
@@ -328,9 +328,9 @@ export const translations: Record<LocaleCode, Translations> = {
   de: {
     demoBanner: {
       notice: "Demo-Website erstellt von",
-      by: "Codalyx",
+      by: "PrismaWeb",
       suffix: "— Fiktives Unternehmen zu Illustrationszwecken",
-      back: "Zurück zu codalyx.fr",
+      back: "Zurück zu prismaweb.fr",
     },
     nav: {
       fournee: "Backcharge",
@@ -508,7 +508,7 @@ export const translations: Record<LocaleCode, Translations> = {
       disclaimerPrefix: "Fiktive Website zu Demonstrationszwecken erstellt von",
       disclaimerSuffix: ". Unter diesem Namen existiert kein Geschäft an dieser Adresse.",
       photosBy: "Fotos bereitgestellt von",
-      copyright: "© 2026 — Codalyx Demo",
+      copyright: "© 2026 — PrismaWeb Demo",
       coords: "Straßburg · 48°35′N 07°44′E",
     },
     switcher: {
@@ -522,9 +522,9 @@ export const translations: Record<LocaleCode, Translations> = {
   en: {
     demoBanner: {
       notice: "Demo website created by",
-      by: "Codalyx",
+      by: "PrismaWeb",
       suffix: "— Fictional business for illustration purposes",
-      back: "Back to codalyx.fr",
+      back: "Back to prismaweb.fr",
     },
     nav: {
       fournee: "Batch",
@@ -701,7 +701,7 @@ export const translations: Record<LocaleCode, Translations> = {
       disclaimerPrefix: "Fictional website created for demo purposes by",
       disclaimerSuffix: ". No shop trades under this name at this address.",
       photosBy: "Photos courtesy of",
-      copyright: "© 2026 — Codalyx Demo",
+      copyright: "© 2026 — PrismaWeb Demo",
       coords: "Strasbourg · 48°35′N 07°44′E",
     },
     switcher: {

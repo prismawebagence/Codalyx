@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Conditions Générales de Vente | Codalyx",
-  description: "Conditions générales de vente de Codalyx, agence web à Strasbourg.",
+  title: "Conditions Générales de Vente | PrismaWeb",
+  description: "Conditions générales de vente de PrismaWeb, agence web à Strasbourg.",
   alternates: { canonical: "/cgv" },
   robots: { index: false, follow: true },
 };
@@ -11,7 +11,7 @@ const articles: { title: string; content: string }[] = [
   {
     title: "Article 1 — Objet",
     content:
-      "Les présentes conditions générales de vente (« CGV ») régissent les relations contractuelles entre Codalyx (ci-après « le Prestataire ») et ses clients, professionnels ou particuliers (ci-après « le Client »), dans le cadre de prestations de création de sites internet, de maintenance et de services associés. Toute commande implique l’acceptation sans réserve des présentes CGV.",
+      "Les présentes conditions générales de vente (« CGV ») régissent les relations contractuelles entre PrismaWeb (ci-après « le Prestataire ») et ses clients, professionnels ou particuliers (ci-après « le Client »), dans le cadre de prestations de création de sites internet, de maintenance et de services associés. Toute commande implique l’acceptation sans réserve des présentes CGV.",
   },
   {
     title: "Article 2 — Prix et modalités de paiement",
@@ -36,7 +36,7 @@ const articles: { title: string; content: string }[] = [
   {
     title: "Article 6 — Résiliation",
     content:
-      "Les abonnements de maintenance sont sans engagement de durée. Le Client peut résilier à tout moment par e-mail à contact@codalyx.fr, avec un préavis de 30 jours. Aucune des prestations de création n’est remboursable une fois les travaux démarrés. En cas de résiliation, le Prestataire transfère au Client l’ensemble des accès (Vercel, GitHub, CMS) dans un délai maximum de 48 h après paiement intégral.",
+      "Les abonnements de maintenance sont sans engagement de durée. Le Client peut résilier à tout moment par e-mail à contact@prismaweb.fr, avec un préavis de 30 jours. Aucune des prestations de création n’est remboursable une fois les travaux démarrés. En cas de résiliation, le Prestataire transfère au Client l’ensemble des accès (Vercel, GitHub, CMS) dans un délai maximum de 48 h après paiement intégral.",
   },
   {
     title: "Article 7 — Propriété intellectuelle",
@@ -46,7 +46,7 @@ const articles: { title: string; content: string }[] = [
   {
     title: "Article 8 — Droit de rétractation",
     content:
-      "Conformément aux articles L221-18 et suivants du Code de la consommation, le Client agissant en qualité de consommateur (non professionnel) dispose d’un délai de quatorze (14) jours à compter de la conclusion du contrat pour exercer son droit de rétractation, sans motif. Le Client renonce expressément à ce droit dès lors qu’il demande au Prestataire de commencer l’exécution avant la fin du délai de rétractation : dans ce cas, le Client est redevable du prix correspondant à la prestation effectivement réalisée. Le droit de rétractation s’exerce par e-mail à contact@codalyx.fr. Ce droit ne s’applique pas aux Clients professionnels.",
+      "Conformément aux articles L221-18 et suivants du Code de la consommation, le Client agissant en qualité de consommateur (non professionnel) dispose d’un délai de quatorze (14) jours à compter de la conclusion du contrat pour exercer son droit de rétractation, sans motif. Le Client renonce expressément à ce droit dès lors qu’il demande au Prestataire de commencer l’exécution avant la fin du délai de rétractation : dans ce cas, le Client est redevable du prix correspondant à la prestation effectivement réalisée. Le droit de rétractation s’exerce par e-mail à contact@prismaweb.fr. Ce droit ne s’applique pas aux Clients professionnels.",
   },
   {
     title: "Article 9 — Responsabilité",

@@ -10,10 +10,10 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://codalyx.fr"),
-  title: "Agence Web Strasbourg | Création de Sites Internet | Codalyx",
+  metadataBase: new URL("https://prismaweb.fr"),
+  title: "Agence Web Strasbourg | Création de Sites Internet | PrismaWeb",
   description:
-    "Agence web à Strasbourg spécialisée en création de site internet, développement web et SEO. Codalyx accompagne les entreprises en Alsace dans leur transformation digitale.",
+    "Agence web à Strasbourg spécialisée en création de site internet, développement web et SEO. PrismaWeb accompagne les entreprises en Alsace dans leur transformation digitale.",
   keywords: [
     "création site internet Strasbourg",
     "agence web Alsace",
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     "SEO Strasbourg",
   ],
   openGraph: {
-    title: "Agence Web Strasbourg | Codalyx",
+    title: "Agence Web Strasbourg | PrismaWeb",
     description:
       "Création de sites internet sur-mesure à Strasbourg. Développement web, SEO et stratégie digitale pour les entreprises en Alsace.",
-    url: "https://codalyx.fr",
-    siteName: "Codalyx",
+    url: "https://prismaweb.fr",
+    siteName: "PrismaWeb",
     locale: "fr_FR",
     type: "website",
     images: [
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Codalyx — Agence Web Strasbourg",
+        alt: "PrismaWeb — Agence Web Strasbourg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agence Web Strasbourg | Codalyx",
+    title: "Agence Web Strasbourg | PrismaWeb",
     description:
       "Création de sites internet sur-mesure à Strasbourg. Développement web, SEO et stratégie digitale pour les entreprises en Alsace.",
     images: ["/og-image.svg"],

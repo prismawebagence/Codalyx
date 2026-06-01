@@ -149,7 +149,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             role="img"
-            aria-label="Aperçu illustratif d'un site web créé par Codalyx"
+            aria-label="Aperçu illustratif d'un site web créé par PrismaWeb"
           >
             <div className="overflow-hidden rounded-xl border border-[#E4E4E7] bg-white shadow-2xl shadow-black/5">
               {/* Browser toolbar */}

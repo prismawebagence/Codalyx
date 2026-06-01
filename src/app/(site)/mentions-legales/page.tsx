@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mentions légales | Codalyx",
-  description: "Mentions légales du site Codalyx, agence web à Strasbourg.",
+  title: "Mentions légales | PrismaWeb",
+  description: "Mentions légales du site PrismaWeb, agence web à Strasbourg.",
   alternates: { canonical: "/mentions-legales" },
 };
 
@@ -18,17 +18,17 @@ export default function MentionsLegales() {
           Éditeur du site
         </h2>
         <p className="mt-3 text-[#6B7280] leading-relaxed">
-          <strong className="text-[#0A0A0A]">Codalyx</strong><br />
-          SIRET : en cours d&apos;immatriculation — communiqué sur simple demande à contact@codalyx.fr<br />
+          <strong className="text-[#0A0A0A]">PrismaWeb</strong><br />
+          SIRET : en cours d&apos;immatriculation — communiqué sur simple demande à contact@prismaweb.fr<br />
           3 Rue Relinde, 67200 Strasbourg, France<br />
           Téléphone : 07 71 65 75 28<br />
-          E-mail : contact@codalyx.fr
+          E-mail : contact@prismaweb.fr
         </p>
 
         <h2 className="mt-10 font-heading text-xl font-semibold text-[#0A0A0A]">
           Directeur de la publication
         </h2>
-        <p className="mt-3 text-[#6B7280]">Codalyx, joignable à contact@codalyx.fr.</p>
+        <p className="mt-3 text-[#6B7280]">PrismaWeb, joignable à contact@prismaweb.fr.</p>
 
         <h2 className="mt-10 font-heading text-xl font-semibold text-[#0A0A0A]">
           Hébergeur
@@ -44,14 +44,14 @@ export default function MentionsLegales() {
           Propriété intellectuelle
         </h2>
         <p className="mt-3 text-[#6B7280] leading-relaxed">
-          L&apos;ensemble des contenus de ce site (textes, images, graphismes, logo, icônes, sons, logiciels) est la propriété exclusive de Codalyx ou de ses partenaires. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite sauf autorisation écrite préalable.
+          L&apos;ensemble des contenus de ce site (textes, images, graphismes, logo, icônes, sons, logiciels) est la propriété exclusive de PrismaWeb ou de ses partenaires. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite sauf autorisation écrite préalable.
         </p>
 
         <h2 className="mt-10 font-heading text-xl font-semibold text-[#0A0A0A]">
           Protection des données personnelles
         </h2>
         <p className="mt-3 text-[#6B7280] leading-relaxed">
-          Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d&apos;un droit d&apos;accès, de rectification, d&apos;effacement et de portabilité de vos données personnelles. Pour exercer ces droits, contactez-nous à contact@codalyx.fr. Pour plus d&apos;informations, consultez notre politique de confidentialité.
+          Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d&apos;un droit d&apos;accès, de rectification, d&apos;effacement et de portabilité de vos données personnelles. Pour exercer ces droits, contactez-nous à contact@prismaweb.fr. Pour plus d&apos;informations, consultez notre politique de confidentialité.
         </p>
 
         <h2 className="mt-10 font-heading text-xl font-semibold text-[#0A0A0A]">
@@ -65,7 +65,7 @@ export default function MentionsLegales() {
           Limitation de responsabilité
         </h2>
         <p className="mt-3 text-[#6B7280] leading-relaxed">
-          Codalyx s&apos;efforce de fournir des informations aussi précises que possible. Toutefois, elle ne pourra être tenue responsable des omissions, des inexactitudes et des carences dans la mise à jour. Codalyx décline toute responsabilité pour les dommages résultant de l&apos;utilisation de ce site.
+          PrismaWeb s&apos;efforce de fournir des informations aussi précises que possible. Toutefois, elle ne pourra être tenue responsable des omissions, des inexactitudes et des carences dans la mise à jour. PrismaWeb décline toute responsabilité pour les dommages résultant de l&apos;utilisation de ce site.
         </p>
       </div>
     </section>

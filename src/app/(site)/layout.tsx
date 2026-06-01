@@ -4,12 +4,12 @@ import { Footer } from "@/components/layout/Footer";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Codalyx",
+  name: "PrismaWeb",
   description:
     "Agence web à Strasbourg spécialisée en création de site internet, développement web et SEO.",
-  url: "https://codalyx.fr",
+  url: "https://prismaweb.fr",
   telephone: "+33 7 71 65 75 28",
-  email: "contact@codalyx.fr",
+  email: "contact@prismaweb.fr",
   address: {
     "@type": "PostalAddress",
     streetAddress: "3 Rue Relinde",
@@ -30,10 +30,10 @@ const jsonLd = {
     closes: "18:00",
   },
   sameAs: [
-    "https://www.linkedin.com/company/codalyx",
-    "https://www.instagram.com/codalyx",
+    "https://www.linkedin.com/company/prismaweb",
+    "https://www.instagram.com/prismaweb",
   ],
-  image: "https://codalyx.fr/og-image.jpg",
+  image: "https://prismaweb.fr/og-image.jpg",
   priceRange: "€€",
 };
 

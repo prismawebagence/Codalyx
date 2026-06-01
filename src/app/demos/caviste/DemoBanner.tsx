@@ -9,14 +9,14 @@ export default function DemoBanner() {
           <Wine className="size-4 shrink-0 text-[#C9A84C]" />
           <span className="text-[#F5F0E8]/70">
             Site de démonstration créé par{" "}
-            <strong className="font-semibold text-[#C9A84C]">Codalyx</strong>. Caviste fictif à vocation illustrative.
+            <strong className="font-semibold text-[#C9A84C]">PrismaWeb</strong>. Caviste fictif à vocation illustrative.
           </span>
         </span>
         <Link
           href="/"
           className="inline-flex items-center gap-1.5 rounded-full border border-[#C9A84C]/40 px-3 py-1 text-[#C9A84C] text-xs font-medium tracking-wide transition-all hover:bg-[#C9A84C]/10"
         >
-          Retour à Codalyx
+          Retour à PrismaWeb
           <ExternalLink className="size-3" />
         </Link>
       </div>
