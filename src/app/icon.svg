@@ -1,10 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="PrismaWeb">
   <title>PrismaWeb</title>
   <rect x="2" y="2" width="44" height="44" rx="12" fill="#0A0A0A"/>
-  <!-- Letter P (white) — stem + smooth bowl -->
   <path d="M 9 35 L 9 14 L 16 14 Q 21 14 21 18.5 Q 21 23 16 23 L 9 23"
-        fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Letter W (orange) — smooth wave/spectrum form -->
+        fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M 25 14 Q 26 33 30 33 Q 32 33 33.5 23 Q 35 33 37 33 Q 41 33 42 14"
-        fill="none" stroke="#FF6B2C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        fill="none" stroke="#FF6B2C" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
