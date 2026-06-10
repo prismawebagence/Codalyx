@@ -13,6 +13,7 @@ import {
   SheetTitle,
   SheetClose,
 } from "@/components/ui/sheet";
+import { LogoMark } from "@/components/shared/LogoMark";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -50,12 +51,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2" aria-label="PrismaWeb — Accueil">
           <div className="flex size-10 items-center justify-center rounded-xl bg-[#0A0A0A]">
-            <svg viewBox="0 0 48 48" className="size-7" aria-hidden="true">
-              <path d="M 9 35 L 9 14 L 16 14 Q 21 14 21 18.5 Q 21 23 16 23 L 9 23"
-                    fill="none" stroke="#FFFFFF" strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M 25 14 Q 26 33 30 33 Q 32 33 33.5 23 Q 35 33 37 33 Q 41 33 42 14"
-                    fill="none" stroke="#FF6B2C" strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            <LogoMark className="size-7" />
           </div>
           <span className="font-heading text-2xl font-bold tracking-tight text-[#0A0A0A]">
             Prisma<span className="text-[#FF6B2C]">Web</span>
