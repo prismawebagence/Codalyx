@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
-// CSP large mais explicite — autorise Spline (démo caviste), Calendly (BookingCTA),
-// Google Fonts, et Pexels (images/vidéos). Tout le reste reste bloqué.
+// CSP large mais explicite — autorise Spline (anciennes démos), Calendly (BookingCTA),
+// Google Fonts, Pexels (images/vidéos) et Picsum (images des démos). Tout le reste reste bloqué.
 const csp = [
   "default-src 'self'",
   // Spline + Calendly nécessitent 'unsafe-eval' (WASM) et 'unsafe-inline' (runtime).

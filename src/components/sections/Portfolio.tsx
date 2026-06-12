@@ -32,12 +32,12 @@ const projects: Project[] = [
     href: "/demos/osteopathe",
   },
   {
-    name: "La Cave du Sommelier — Caviste Premium",
-    type: "E-commerce · Catalogue & Panier",
+    name: "Atelier Vauban — Cabinet d’architecture",
+    type: "Pack Pro · Multi-pages, blog & RDV",
     description:
-      "Démo en ligne : caviste fictif à Strasbourg avec catalogue de 9 vins d'exception, filtres par région, cards 3D, panier interactif et fiche produit détaillée.",
-    gradient: "from-[#1A0A0A] to-[#722F37]",
-    href: "/demos/caviste",
+      "Démo en ligne : cabinet d’architecture fictif à Strasbourg — projets filtrables, fiches détaillées, journal (blog) et prise de rendez-vous en ligne. Le niveau d’une agence parisienne.",
+    gradient: "from-[#1A1815] to-[#A23E22]",
+    href: "/demos/architecte",
   },
 ];
 

@@ -5,7 +5,7 @@ import FinalCTA from "@/components/sections/FinalCTA";
 export const metadata: Metadata = {
   title: "Réalisations & démos | PrismaWeb — Agence Web Strasbourg",
   description:
-    "Découvrez nos projets de démonstration : sites vitrines, sites avec réservation en ligne et e-commerce pensés pour les entreprises alsaciennes.",
+    "Découvrez nos projets de démonstration : site vitrine, site avec réservation en ligne et site premium multi-pages pensés pour les entreprises alsaciennes.",
   alternates: { canonical: "/realisations" },
 };
 
