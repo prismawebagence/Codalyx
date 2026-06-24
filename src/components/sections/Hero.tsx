@@ -94,6 +94,16 @@ export default function Hero() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Text content */}
           <div>
+            <motion.p
+              className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#E4E4E7] bg-white px-4 py-1.5 text-sm font-medium text-[#52525B]"
+              variants={fadeUp}
+              initial="hidden"
+              animate="visible"
+              custom={-1}
+            >
+              <span className="size-1.5 rounded-full bg-[#FF6B2C]" aria-hidden="true" />
+              Agence web à Strasbourg
+            </motion.p>
             <h1 className="font-heading text-4xl font-semibold leading-[1.1] tracking-tight text-[#0A0A0A] sm:text-5xl lg:text-6xl">
               {titleWords.map((word, i) => (
                 <motion.span

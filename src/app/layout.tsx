@@ -30,21 +30,15 @@ export const metadata: Metadata = {
     siteName: "PrismaWeb",
     locale: "fr_FR",
     type: "website",
-    images: [
-      {
-        url: "/og-image.svg",
-        width: 1200,
-        height: 630,
-        alt: "PrismaWeb — Agence Web Strasbourg",
-      },
-    ],
+    // L'image OG est générée en PNG par src/app/opengraph-image.tsx
+    // (auto-détectée par Next.js). Pas de référence manuelle ici.
   },
   twitter: {
     card: "summary_large_image",
     title: "Agence Web Strasbourg | PrismaWeb",
     description:
       "Création de sites internet sur-mesure à Strasbourg. Développement web, SEO et stratégie digitale pour les entreprises en Alsace.",
-    images: ["/og-image.svg"],
+    // Twitter réutilise automatiquement opengraph-image.tsx.
   },
   robots: {
     index: true,

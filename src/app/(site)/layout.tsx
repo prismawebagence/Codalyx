@@ -3,37 +3,44 @@ import { Footer } from "@/components/layout/Footer";
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ProfessionalService",
+  "@id": "https://prismaweb.fr/#business",
   name: "PrismaWeb",
   description:
-    "Agence web à Strasbourg spécialisée en création de site internet, développement web et SEO.",
+    "Agence web à Strasbourg spécialisée dans la création de sites internet, le développement web et le référencement SEO local pour les artisans, commerçants et PME d'Alsace.",
   url: "https://prismaweb.fr",
-  telephone: "+33 7 71 65 75 28",
+  telephone: "+33771657528",
   email: "contact@prismaweb.fr",
+  // Adresse non publique (activité exercée à domicile) — on déclare la ville
+  // et la zone d'intervention plutôt qu'une rue précise.
   address: {
     "@type": "PostalAddress",
-    streetAddress: "3 Rue Relinde",
     addressLocality: "Strasbourg",
-    postalCode: "67200",
+    postalCode: "67000",
     addressRegion: "Grand Est",
     addressCountry: "FR",
   },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 48.5834,
-    longitude: 7.7521,
-  },
+  areaServed: [
+    { "@type": "City", name: "Strasbourg" },
+    { "@type": "AdministrativeArea", name: "Bas-Rhin" },
+    { "@type": "AdministrativeArea", name: "Alsace" },
+    { "@type": "Country", name: "France" },
+  ],
+  knowsAbout: [
+    "Création de site internet",
+    "Développement web",
+    "Référencement SEO local",
+    "Site vitrine",
+    "Site e-commerce",
+  ],
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     opens: "09:00",
     closes: "18:00",
   },
-  sameAs: [
-    "https://www.linkedin.com/company/prismaweb",
-    "https://www.instagram.com/prismaweb",
-  ],
-  image: "https://prismaweb.fr/og-image.jpg",
+  image: "https://prismaweb.fr/opengraph-image",
+  logo: "https://prismaweb.fr/icon.svg",
   priceRange: "€€",
 };
 
