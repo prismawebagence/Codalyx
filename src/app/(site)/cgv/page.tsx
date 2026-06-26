@@ -49,17 +49,27 @@ const articles: { title: string; content: string }[] = [
       "Conformément aux articles L221-18 et suivants du Code de la consommation, le Client agissant en qualité de consommateur (non professionnel) dispose d’un délai de quatorze (14) jours à compter de la conclusion du contrat pour exercer son droit de rétractation, sans motif. Le Client renonce expressément à ce droit dès lors qu’il demande au Prestataire de commencer l’exécution avant la fin du délai de rétractation : dans ce cas, le Client est redevable du prix correspondant à la prestation effectivement réalisée. Le droit de rétractation s’exerce par e-mail à contact@prismaweb.fr. Ce droit ne s’applique pas aux Clients professionnels.",
   },
   {
-    title: "Article 9 — Responsabilité",
+    title: "Article 9 — Obligations du Client",
     content:
-      "Le Prestataire s’engage à mettre en œuvre tous les moyens nécessaires pour assurer la qualité et la disponibilité du site. Sa responsabilité ne saurait être engagée en cas de force majeure, de fait d’un tiers (notamment indisponibilité de Vercel, du registrar de domaine ou du CMS Sanity) ou de faute du Client. Le Prestataire n’est pas responsable des contenus publiés par le Client sur son site.",
+      "La bonne exécution de la prestation suppose une collaboration active du Client. Celui-ci s’engage à fournir, dans les délais convenus, l’ensemble des éléments nécessaires à la réalisation du site : textes, images, logo, accès techniques, identité visuelle et toute information utile. Le Client désigne un interlocuteur unique habilité à valider les étapes du projet. Tout retard, défaut de fourniture ou de validation imputable au Client suspend les délais de livraison et peut donner lieu à une refacturation du temps supplémentaire engagé, au tarif de 65 € net de l’heure.",
   },
   {
-    title: "Article 10 — Données personnelles",
+    title: "Article 10 — Garantie des contenus fournis par le Client",
+    content:
+      "Le Client garantit qu’il détient l’ensemble des droits (propriété intellectuelle, droit à l’image, licences) sur les contenus qu’il transmet au Prestataire (textes, photographies, vidéos, marques, logos) et que ces contenus sont licites. Le Client demeure seul responsable des contenus qu’il fournit et publie sur son site. Il garantit le Prestataire contre tout recours de tiers lié à ces contenus et le relève de toute condamnation qui en découlerait. Le Prestataire se réserve le droit de refuser ou de retirer tout contenu manifestement illicite.",
+  },
+  {
+    title: "Article 11 — Responsabilité",
+    content:
+      "Le Prestataire est tenu d’une obligation de moyens et s’engage à mettre en œuvre tout le soin nécessaire à la qualité et à la disponibilité du site. Sa responsabilité ne saurait être engagée en cas de force majeure, de fait d’un tiers (notamment indisponibilité des services d’hébergement Vercel, du registrar de domaine ou du CMS Sanity), de mauvaise utilisation du site par le Client ou de contenus publiés par celui-ci. En tout état de cause, et sauf faute lourde ou dolosive, la responsabilité totale du Prestataire au titre du contrat est expressément plafonnée au montant net effectivement payé par le Client pour la prestation concernée. Le Prestataire ne saurait être tenu responsable des dommages indirects (perte de chiffre d’affaires, de clientèle, de données ou d’image).",
+  },
+  {
+    title: "Article 12 — Données personnelles",
     content:
       "Les données collectées via le formulaire de contact ne sont utilisées que pour répondre à la demande du Client. Elles ne sont ni revendues ni partagées. Pour le détail, voir la Politique de confidentialité.",
   },
   {
-    title: "Article 11 — Médiation et juridiction",
+    title: "Article 13 — Médiation et juridiction",
     content:
       "En cas de litige, les parties s’engagent à rechercher une solution amiable. Conformément à l’article L612-1 du Code de la consommation, le Client consommateur peut recourir gratuitement à un médiateur de la consommation. À défaut de résolution amiable, et sauf disposition d’ordre public contraire, le Tribunal Judiciaire de Strasbourg sera seul compétent. Les présentes CGV sont régies par le droit français.",
   },

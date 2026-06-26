@@ -18,7 +18,7 @@ interface BookingCTAProps {
 }
 
 // Calendly configuration — colors match the PrismaWeb brand palette.
-const CALENDLY_URL = "https://calendly.com/sank4bob/30min";
+const CALENDLY_URL = "https://calendly.com/prismawebagence/30min";
 const CALENDLY_PARAMS = new URLSearchParams({
   hide_gdpr_banner: "1",
   primary_color: "FF6B2C",
