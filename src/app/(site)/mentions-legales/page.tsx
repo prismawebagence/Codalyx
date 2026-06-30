@@ -18,8 +18,9 @@ export default function MentionsLegales() {
           Éditeur du site
         </h2>
         <p className="mt-3 text-[#6B7280] leading-relaxed">
-          <strong className="text-[#0A0A0A]">PrismaWeb</strong><br />
-          SIRET : en cours d&apos;immatriculation — communiqué sur simple demande à contact@prismaweb.fr<br />
+          <strong className="text-[#0A0A0A]">Enzo Galle</strong>, entrepreneur individuel (micro-entreprise)<br />
+          Nom commercial : PrismaWeb<br />
+          SIRET : 106 875 941 00010<br />
           3 Rue Relinde, 67200 Strasbourg, France<br />
           Téléphone : 07 71 65 75 28<br />
           E-mail : contact@prismaweb.fr
@@ -28,7 +29,7 @@ export default function MentionsLegales() {
         <h2 className="mt-10 font-heading text-xl font-semibold text-[#0A0A0A]">
           Directeur de la publication
         </h2>
-        <p className="mt-3 text-[#6B7280]">PrismaWeb, joignable à contact@prismaweb.fr.</p>
+        <p className="mt-3 text-[#6B7280]">Enzo Galle, joignable à contact@prismaweb.fr.</p>
 
         <h2 className="mt-10 font-heading text-xl font-semibold text-[#0A0A0A]">
           Hébergeur
