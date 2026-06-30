@@ -31,7 +31,7 @@ const jsonLd = {
     "Développement web",
     "Référencement SEO local",
     "Site vitrine",
-    "Site e-commerce",
+    "Site avec gestion de contenu",
   ],
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",

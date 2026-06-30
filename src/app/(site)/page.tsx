@@ -42,7 +42,7 @@ const faqJsonLd = {
 export const metadata: Metadata = {
   title: "Création de site internet à Strasbourg | Agence web PrismaWeb",
   description:
-    "PrismaWeb crée des sites internet rapides et optimisés SEO pour les artisans, commerçants et PME de Strasbourg et d'Alsace. Sites vitrine, e-commerce et sur-mesure dès 790 €.",
+    "PrismaWeb crée des sites internet rapides et optimisés SEO pour les artisans, commerçants et PME de Strasbourg et d'Alsace. Sites vitrine et sur-mesure clé en main dès 790 €.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Création de site internet à Strasbourg | PrismaWeb",
