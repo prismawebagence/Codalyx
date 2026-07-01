@@ -91,41 +91,58 @@ export default function Portfolio() {
           className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {projects.map((project) => {
+            const domain = `prismaweb.fr${project.href ?? ""}`;
             const CardInner = (
               <>
-                {/* Screenshot de la démo (teinte dégradée en fond de chargement) */}
-                <div
-                  className={`relative aspect-video w-full bg-gradient-to-br ${project.gradient}`}
-                >
-                  <Image
-                    src={project.image}
-                    alt={`Aperçu du site ${project.name} créé par PrismaWeb`}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover object-top"
-                  />
+                {/* Mockup navigateur — le screenshot reste net, sans voile */}
+                <div className="border-b border-slate-200/70">
+                  {/* Barre du navigateur */}
+                  <div className="flex items-center gap-2 bg-slate-100 px-3.5 py-2.5">
+                    <span className="flex gap-1.5" aria-hidden="true">
+                      <span className="size-2.5 rounded-full bg-[#FF5F57]" />
+                      <span className="size-2.5 rounded-full bg-[#FEBC2E]" />
+                      <span className="size-2.5 rounded-full bg-[#28C840]" />
+                    </span>
+                    <span className="ml-1 flex-1 truncate rounded-md bg-white px-2.5 py-1 text-center text-[11px] font-medium text-slate-500">
+                      {domain}
+                    </span>
+                  </div>
+
+                  {/* Screenshot */}
+                  <div
+                    className={`relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br ${project.gradient}`}
+                  >
+                    <Image
+                      src={project.image}
+                      alt={`Aperçu du site ${project.name} créé par PrismaWeb`}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                    />
+                    {project.href && (
+                      <span className="absolute top-3 right-3 z-10 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-[#0A0A0A] shadow-sm">
+                        <span className="size-1.5 rounded-full bg-[#28C840]" />
+                        Démo en ligne
+                      </span>
+                    )}
+                  </div>
                 </div>
 
-                {/* Demo badge */}
-                <span className="absolute top-3 right-3 z-10 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-[#0A0A0A]">
-                  {project.href ? "Démo en ligne" : "Bientôt"}
-                </span>
-
-                {/* Overlay — description toujours visible (mobile/clavier), s'éclaircit au hover */}
-                <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 transition-all duration-500 ease-out group-hover:from-black/90 group-focus-within:from-black/90 sm:p-6">
-                  <span className="mb-1 inline-block text-xs font-medium tracking-wider text-[#FF6B2C] uppercase">
+                {/* Légende — infos posées proprement sous le mockup */}
+                <div className="flex flex-1 flex-col p-5">
+                  <span className="text-xs font-medium uppercase tracking-wider text-[#FF6B2C]">
                     {project.type}
                   </span>
-                  <h3 className="font-heading text-lg font-semibold text-white sm:text-xl">
+                  <h3 className="mt-1.5 font-heading text-lg font-semibold text-[#0A0A0A]">
                     {project.name}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white/85">
+                  <p className="mt-2 text-sm leading-relaxed text-[#6B7280]">
                     {project.description}
                   </p>
                   {project.href && (
-                    <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-[#FF6B2C]">
+                    <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#FF6B2C]">
                       Voir la démo
-                      <ArrowUpRight className="size-3.5" />
+                      <ArrowUpRight className="size-3.5 transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </span>
                   )}
                 </div>
@@ -136,21 +153,21 @@ export default function Portfolio() {
               <motion.div
                 key={project.name}
                 variants={cardVariants}
-                whileHover={{ scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 80, damping: 20, duration: 0.6 }}
-                className="group relative overflow-hidden rounded-2xl"
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 120, damping: 18 }}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-[0_20px_40px_-24px_rgba(0,0,0,0.18)] transition-shadow duration-500 hover:shadow-[0_28px_52px_-20px_rgba(0,0,0,0.24)]"
               >
                 {project.href ? (
                   <Link
                     href={project.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block cursor-pointer"
+                    className="flex h-full cursor-pointer flex-col"
                   >
                     {CardInner}
                   </Link>
                 ) : (
-                  CardInner
+                  <div className="flex h-full flex-col">{CardInner}</div>
                 )}
               </motion.div>
             );
