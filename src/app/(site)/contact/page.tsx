@@ -3,10 +3,17 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import ContactForm from "@/components/shared/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact | PrismaWeb — Agence Web Strasbourg",
+  title: "Contact | PrismaWeb — Agence Web à Strasbourg",
   description:
-    "Contactez PrismaWeb pour votre projet de création de site internet à Strasbourg. Devis gratuit sous 24h. 3 Rue Relinde, 67200 Strasbourg.",
+    "Contactez PrismaWeb pour votre projet de création de site internet à Strasbourg. Devis gratuit sous 24h, échange sans engagement. Strasbourg et toute l'Alsace.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact — PrismaWeb, agence web à Strasbourg",
+    description:
+      "Parlons de votre projet de site internet. Devis gratuit sous 24h, sans engagement. PrismaWeb, Strasbourg et toute l'Alsace.",
+    url: "https://prismaweb.fr/contact",
+    type: "website",
+  },
 };
 
 const contactInfo = [

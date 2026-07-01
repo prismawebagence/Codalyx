@@ -8,7 +8,15 @@ import FinalCTA from "@/components/sections/FinalCTA";
 export const metadata: Metadata = {
   title: "Offres & tarifs | Création de site internet à Strasbourg | PrismaWeb",
   description:
-    "Trois packs transparents : Vitrine 790€, Business 1 490€, Pro 2 490€. Maintenance Contenu 99€/mois ou Maintenance Technique 69€/mois. Net de TVA, sans surprise.",
+    "Trois packs transparents pour votre site internet à Strasbourg : Vitrine 790€, Business 1 490€, Pro 2 490€. Maintenance 69€ ou 99€/mois, sans engagement. Net de TVA, sans surprise.",
+  alternates: { canonical: "/offres" },
+  openGraph: {
+    title: "Offres & tarifs — Création de site internet à Strasbourg | PrismaWeb",
+    description:
+      "Trois packs transparents : Vitrine 790€, Business 1 490€, Pro 2 490€. Prix nets, délais annoncés, propriété totale de votre site.",
+    url: "https://prismaweb.fr/offres",
+    type: "website",
+  },
 };
 
 const jsonLd = {

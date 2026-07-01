@@ -7,7 +7,15 @@ const offer = getOffer("vitrine")!;
 export const metadata: Metadata = {
   title: `${offer.name} — 790€ net | Site vitrine Strasbourg | PrismaWeb`,
   description:
-    "Site vitrine professionnel 3 à 5 pages, responsive, livré en 5 à 7 jours. Hébergement Vercel inclus à vie. 790€ net de TVA.",
+    "Site vitrine professionnel 3 à 5 pages, responsive et optimisé SEO local, livré en 5 à 7 jours. Idéal artisans et commerçants de Strasbourg. Hébergement inclus. 790€ net de TVA.",
+  alternates: { canonical: "/offres/vitrine" },
+  openGraph: {
+    title: "Site vitrine à Strasbourg — 790€ net | PrismaWeb",
+    description:
+      "Site vitrine professionnel 3 à 5 pages, responsive, optimisé SEO local, livré en 5 à 7 jours. Hébergement inclus. 790€ net de TVA.",
+    url: "https://prismaweb.fr/offres/vitrine",
+    type: "website",
+  },
 };
 
 const jsonLd = buildOfferJsonLd(offer);

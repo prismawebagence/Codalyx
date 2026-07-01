@@ -3,10 +3,17 @@ import { Target, Heart, Shield, MapPin } from "lucide-react";
 import FinalCTA from "@/components/sections/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "À propos | PrismaWeb — Agence Web Strasbourg",
+  title: "À propos | PrismaWeb — Agence Web à Strasbourg",
   description:
-    "Découvrez PrismaWeb, agence web basée à Strasbourg. Notre mission : rendre le web accessible aux artisans et PME d'Alsace avec des sites performants.",
+    "Découvrez PrismaWeb, agence web basée à Strasbourg fondée par Enzo Galle. Notre mission : rendre le web accessible aux artisans, commerçants et PME d'Alsace.",
   alternates: { canonical: "/a-propos" },
+  openGraph: {
+    title: "À propos — PrismaWeb, agence web à Strasbourg",
+    description:
+      "PrismaWeb rend le web accessible aux artisans, commerçants et PME d'Alsace : sites performants, prix transparents, accompagnement de proximité.",
+    url: "https://prismaweb.fr/a-propos",
+    type: "website",
+  },
 };
 
 const values = [

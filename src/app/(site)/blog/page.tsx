@@ -3,9 +3,17 @@ import { Sparkles, Mail } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog | Conseils web & SEO pour entreprises | PrismaWeb",
+  title: "Blog | Conseils web & SEO local pour entreprises | PrismaWeb",
   description:
-    "Articles et conseils sur la création de site internet, le SEO local et la stratégie digitale pour les entreprises à Strasbourg et en Alsace.",
+    "Articles et conseils sur la création de site internet, le SEO local et la présence en ligne pour les artisans, commerçants et PME de Strasbourg et d'Alsace.",
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Blog — Conseils web & SEO local | PrismaWeb",
+    description:
+      "Conseils concrets sur la création de site internet et le référencement local pour les entreprises de Strasbourg et d'Alsace.",
+    url: "https://prismaweb.fr/blog",
+    type: "website",
+  },
 };
 
 const upcoming = [
