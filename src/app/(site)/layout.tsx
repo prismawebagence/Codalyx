@@ -19,6 +19,8 @@ const jsonLd = {
   },
   telephone: "+33771657528",
   email: "contact@prismaweb.fr",
+  // Fiche Google Business Profile — relie officiellement le site à l'établissement Google.
+  sameAs: ["https://share.google/S5NZhTrLJDF5s2HPZ"],
   // Adresse non publique (activité exercée à domicile) — on déclare la ville
   // et la zone d'intervention plutôt qu'une rue précise.
   address: {

@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useInView, type Variants } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import SectionTitle from "@/components/shared/SectionTitle";
 
 type Project = {
@@ -11,6 +12,7 @@ type Project = {
   type: string;
   description: string;
   gradient: string;
+  image: string;
   href?: string;
 };
 
@@ -21,6 +23,7 @@ const projects: Project[] = [
     description:
       "Démo en ligne : site d\u2019artisan boulanger fictif avec hero, carte des produits, histoire et horaires — palette chaleureuse sur-mesure.",
     gradient: "from-[#3D2817] to-[#8B5A2B]",
+    image: "/previews/boulangerie.webp",
     href: "/demos/boulangerie",
   },
   {
@@ -29,6 +32,7 @@ const projects: Project[] = [
     description:
       "D\u00e9mo en ligne : cabinet d\u2019ost\u00e9opathie fictif \u00e0 Lyon avec prise de rendez-vous int\u00e9gr\u00e9e \u2014 choix de la prestation, calendrier interactif, cr\u00e9neaux et confirmation.",
     gradient: "from-[#2F4A34] to-[#8FA68E]",
+    image: "/previews/osteopathe.webp",
     href: "/demos/osteopathe",
   },
   {
@@ -37,6 +41,7 @@ const projects: Project[] = [
     description:
       "Démo en ligne : cabinet d’architecture fictif à Strasbourg — projets filtrables, fiches détaillées, journal (blog) et prise de rendez-vous en ligne. Le niveau d’une agence parisienne.",
     gradient: "from-[#1A1815] to-[#A23E22]",
+    image: "/previews/architecte.webp",
     href: "/demos/architecte",
   },
 ];
@@ -88,10 +93,18 @@ export default function Portfolio() {
           {projects.map((project) => {
             const CardInner = (
               <>
-                {/* Gradient background simulating project image */}
+                {/* Screenshot de la démo (teinte dégradée en fond de chargement) */}
                 <div
-                  className={`aspect-video w-full bg-gradient-to-br ${project.gradient}`}
-                />
+                  className={`relative aspect-video w-full bg-gradient-to-br ${project.gradient}`}
+                >
+                  <Image
+                    src={project.image}
+                    alt={`Aperçu du site ${project.name} créé par PrismaWeb`}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover object-top"
+                  />
+                </div>
 
                 {/* Demo badge */}
                 <span className="absolute top-3 right-3 z-10 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-[#0A0A0A]">
