@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Portfolio from "@/components/sections/Portfolio";
 import FinalCTA from "@/components/sections/FinalCTA";
+import { OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Réalisations & démos | PrismaWeb — Agence Web à Strasbourg",
   description:
-    "Découvrez nos projets de démonstration : site vitrine, site avec réservation en ligne et site premium multi-pages pensés pour les entreprises de Strasbourg et d'Alsace.",
+    "Découvrez nos démos : site vitrine, site avec réservation en ligne et site premium multi-pages, pensés pour les entreprises de Strasbourg et d'Alsace.",
   alternates: { canonical: "/realisations" },
   openGraph: {
     title: "Réalisations & démos — PrismaWeb, agence web à Strasbourg",
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
       "Trois démos concrètes — architecte, boulangerie, ostéopathe — qui montrent ce que PrismaWeb sait construire pour les entreprises d'Alsace.",
     url: "https://prismaweb.fr/realisations",
     type: "website",
+    images: OG_IMAGE,
   },
 };
 

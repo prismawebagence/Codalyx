@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Target, Heart, Shield, MapPin } from "lucide-react";
 import FinalCTA from "@/components/sections/FinalCTA";
+import { OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "À propos | PrismaWeb — Agence Web à Strasbourg",
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
       "PrismaWeb rend le web accessible aux artisans, commerçants et PME d'Alsace : sites performants, prix transparents, accompagnement de proximité.",
     url: "https://prismaweb.fr/a-propos",
     type: "website",
+    images: OG_IMAGE,
   },
 };
 

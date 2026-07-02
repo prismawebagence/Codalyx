@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import ContactForm from "@/components/shared/ContactForm";
+import { OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Contact | PrismaWeb — Agence Web à Strasbourg",
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
       "Parlons de votre projet de site internet. Devis gratuit sous 24h, sans engagement. PrismaWeb, Strasbourg et toute l'Alsace.",
     url: "https://prismaweb.fr/contact",
     type: "website",
+    images: OG_IMAGE,
   },
 };
 

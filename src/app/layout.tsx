@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
+import { OG_IMAGE, OG_IMAGE_TWITTER } from "@/lib/seo";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -38,15 +39,14 @@ export const metadata: Metadata = {
     siteName: "PrismaWeb",
     locale: "fr_FR",
     type: "website",
-    // L'image OG est générée en PNG par src/app/opengraph-image.tsx
-    // (auto-détectée par Next.js). Pas de référence manuelle ici.
+    images: OG_IMAGE,
   },
   twitter: {
     card: "summary_large_image",
     title: "Agence Web Strasbourg | PrismaWeb",
     description:
       "Création de sites internet sur-mesure à Strasbourg. Développement web, SEO local et présence en ligne pour les entreprises d'Alsace.",
-    // Twitter réutilise automatiquement opengraph-image.tsx.
+    images: OG_IMAGE_TWITTER,
   },
   robots: {
     index: true,

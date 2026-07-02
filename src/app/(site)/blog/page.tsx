@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sparkles, Mail } from "lucide-react";
 import Link from "next/link";
+import { OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Blog | Conseils web & SEO local pour entreprises | PrismaWeb",
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
       "Conseils concrets sur la création de site internet et le référencement local pour les entreprises de Strasbourg et d'Alsace.",
     url: "https://prismaweb.fr/blog",
     type: "website",
+    images: OG_IMAGE,
   },
 };
 

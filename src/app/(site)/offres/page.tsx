@@ -4,18 +4,21 @@ import { offers, maintenances } from "@/lib/offers";
 import OfferCardCompact from "@/components/sections/OfferCardCompact";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
+import { OG_IMAGE } from "@/lib/seo";
+import { faqJsonLd } from "@/lib/faq";
 
 export const metadata: Metadata = {
-  title: "Offres & tarifs | Création de site internet à Strasbourg | PrismaWeb",
+  title: "Offres & tarifs — sites internet à Strasbourg | PrismaWeb",
   description:
-    "Trois packs transparents pour votre site internet à Strasbourg : Vitrine 790€, Business 1 490€, Pro 2 490€. Maintenance 69€ ou 99€/mois, sans engagement. Net de TVA, sans surprise.",
+    "Trois packs clairs pour votre site à Strasbourg : Vitrine 790 €, Business 1 490 €, Pro 2 490 €. Prix nets de TVA, délais annoncés, sans surprise.",
   alternates: { canonical: "/offres" },
   openGraph: {
-    title: "Offres & tarifs — Création de site internet à Strasbourg | PrismaWeb",
+    title: "Offres & tarifs — sites internet à Strasbourg | PrismaWeb",
     description:
-      "Trois packs transparents : Vitrine 790€, Business 1 490€, Pro 2 490€. Prix nets, délais annoncés, propriété totale de votre site.",
+      "Trois packs transparents : Vitrine 790 €, Business 1 490 €, Pro 2 490 €. Prix nets, délais annoncés, propriété totale de votre site.",
     url: "https://prismaweb.fr/offres",
     type: "website",
+    images: OG_IMAGE,
   },
 };
 
@@ -42,6 +45,10 @@ export default function OffresPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* HERO */}

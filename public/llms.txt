@@ -1,0 +1,30 @@
+# PrismaWeb
+
+> Agence web à Strasbourg (Alsace) spécialisée dans la création de sites internet pour les artisans, commerçants et PME. Sites vitrine, sites avec CMS et sites premium optimisés pour le référencement local, à prix transparents.
+
+PrismaWeb est dirigée par Enzo Galle (entrepreneur individuel, micro-entreprise, SIRET 106 875 941 00010), basée à Strasbourg. Zone d'intervention : Strasbourg, Bas-Rhin, Alsace et reste de la France à distance.
+
+## Offres et tarifs
+- [Pack Vitrine — 790 € net](https://prismaweb.fr/offres/vitrine) : site vitrine 3 à 5 pages, responsive, SEO local, hébergement inclus, livré en 5 à 7 jours.
+- [Pack Business — 1 490 € net](https://prismaweb.fr/offres/business) : site jusqu'à 8 pages avec CMS Sanity (contenus modifiables par le client), livré en 10 à 14 jours.
+- [Pack Pro — 2 490 € net](https://prismaweb.fr/offres/pro) : site premium jusqu'à 15 pages, blog SEO, animations, performance Lighthouse > 90, livré en 21 à 30 jours.
+- Maintenance optionnelle et sans engagement : Contenu 99 €/mois, Technique 69 €/mois.
+
+## Pages clés
+- [Accueil](https://prismaweb.fr)
+- [Offres & tarifs](https://prismaweb.fr/offres)
+- [Réalisations & démos](https://prismaweb.fr/realisations)
+- [À propos](https://prismaweb.fr/a-propos)
+- [Blog](https://prismaweb.fr/blog)
+- [Contact](https://prismaweb.fr/contact)
+
+## Contact
+- Email : contact@prismaweb.fr
+- Téléphone : 07 71 65 75 28
+- Site : https://prismaweb.fr
+
+## À savoir
+- Prix nets de TVA (franchise en base, article 293 B du CGI), annoncés à l'avance, sans surprise.
+- Le client est propriétaire à 100 % de son site : code source, contenu et accès lui sont transférés.
+- Hébergement Vercel inclus à vie dans le prix de création ; nom de domaine à la charge du client (~10-15 €/an).
+- PrismaWeb ne propose pas de boutique e-commerce ni de paiement en ligne.
